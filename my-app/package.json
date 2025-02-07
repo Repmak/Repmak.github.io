@@ -1,8 +1,8 @@
 {
-  "homepage": "https://repmak.github.io/",
+  "homepage": "https://repmak.github.io/my-app/",
   "name": "my-app",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "dependencies": {
     "cra-template": "1.2.0",
     "react": "^19.0.0",
