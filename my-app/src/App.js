@@ -1,21 +1,56 @@
-import logo from './logo.svg';
 import './App.css';
 import { motion } from "framer-motion";
 
 function App() {
     return (
-        <div className="content">
-            <div className="flex items-center justify-center h-screen bg-black">
-                <motion.div
-                    className="absolute top-0 bg-black rounded-b-[30px] flex items-center justify-center text-white text-lg font-semibold"
-                    initial={{width: 100, height: 30, borderRadius: "30px 30px 0 0"}}
-                    animate={{width: 300, height: 60, borderRadius: "30px 30px 0 0"}}
-                    transition={{duration: 0.8, ease: [0.4, 0, 0.2, 1]}}
+        <html>
+        <body>
+        <div className="header">
+            JUSTIN KAMPER
+            <div className="flex justify-center items-center h-screen">
+                <motion.svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="black"
+                    width="60"
+                    height="60"
+                    animate={{y: [0, 10, 0]}}
+                    transition={{repeat: Infinity, duration: 1.5, ease: "easeInOut"}}
                 >
-                    Justin Kamper
-                </motion.div>
+                    <path
+                        d="M12 2v16m0 0l-6-6m6 6l6-6"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                    />
+                </motion.svg>
             </div>
         </div>
+
+        <div className="projects-container">
+            <div className="project">
+                <div className="project-title">
+                    Financial Risk Forecasting
+                </div>
+                <div className="project-status project-status-in-development">
+                    In development
+                </div>
+
+            </div>
+
+            <div className="project">
+                <div className="project-title">
+                    Connect 4
+                </div>
+                <div className="project-status project-status-completed">
+                    Completed (06/2024 - 07/2024)
+                </div>
+            </div>
+        </div>
+
+        </body>
+        </html>
     );
 }
 
