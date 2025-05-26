@@ -1,38 +1,85 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lexend:wght@100..900&display=swap');
+
+html {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: #171717;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  font-family: "Lexend", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 8em;
+  color: aliceblue;
+  letter-spacing: .5rem;
   text-align: center;
+  align-content: center;
+  height: 100vh;
+  user-select: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.projects-container {
+  margin-left: 30em;
+  margin-right: 30em;
+  display: grid;
+  row-gap: 4em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.project {
+  border-style: solid;
+  border-radius: 1em;
+  border-color: aliceblue;
+  border-width: 0.15em;
+  width: 100%;
+  padding: 1em;
+  display:grid;
+  grid-template-areas:
+    'project-title project-status'
+    'project-description project-description';
+  grid-template-columns: 4fr 2fr;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.project-title {
+  grid-area: project-title;
+  font-family: "Lexend", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 3em;
+  color: aliceblue;
 }
 
-.App-link {
-  color: #61dafb;
+.project-description {
+  grid-area: project-description;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.7em;
+  color: aliceblue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.project-status {
+  grid-area: project-status;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 1.3em;
+  text-align: right;
+}
+
+.project-status-completed {
+  color: #00ff0d;
+}
+
+.project-status-in-development {
+  color: #f19100;
 }
