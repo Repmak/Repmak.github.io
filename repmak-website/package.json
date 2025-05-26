@@ -1,6 +1,6 @@
 {
   "name": "repmak-website",
-  "homepage": "https://Repmak.github.io/repmak-website",
+  "homepage": "https://Repmak.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
