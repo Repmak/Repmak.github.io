@@ -3,20 +3,16 @@
 
 // git checkout main
 // git add .
-// git commit -m "framer motion test"
+// git commit -m "reset to framer motion thing"
 // git push origin main
 
 import './App.css';
-// import { motion } from "framer-motion";
 import { motion, AnimatePresence } from 'motion/react';
 
 const tabs = ['Home', 'DMs', 'Activity', 'More'];
 
 
-// function App() {
 function App() {
-  const [activeTab, setActiveTab] = useState('Home');
-
     return (
         <html>
         <body>
@@ -42,34 +38,6 @@ function App() {
                 </motion.svg>
             </div>
         </div>
-
-        <div>
-            <nav>
-                {tabs.map((tab) => (
-                    <button key={tab} onClick={() => setActiveTab(tab)}>
-                        {tab}
-                        {activeTab === tab && (
-                            <motion.div
-                                layoutId="underline"
-                                className="underline"
-                            />
-                        )}
-                    </button>
-                ))}
-            </nav>
-            <AnimatePresence mode="wait">
-                <motion.div
-                    key={activeTab}
-                    layout
-                    initial={{opacity: 0}}
-                    animate={{opacity: 1}}
-                    exit={{opacity: 0}}
-                >
-                    {/* Content for {activeTab} */}
-                </motion.div>
-            </AnimatePresence>
-        </div>
-
         {/*MINIMALIST ARROW DK IF I END UP USING*/}
         {/*<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">*/}
         {/*    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>*/}
