@@ -3,51 +3,20 @@
 
 // git checkout main
 // git add .
-// git commit -m "reset to framer motion thing"
+// git commit -m "new name and about me"
 // git push origin main
 
 import './App.css';
 import { motion, AnimatePresence } from 'motion/react';
-
-const tabs = ['Home', 'DMs', 'Activity', 'More'];
-
 
 function App() {
     return (
         <html>
         <body>
         <div className="header">
-            JUSTIN KAMPER
-            <div className="flex justify-center items-center h-screen">
-                <motion.svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="black"
-                    width="100"
-                    height="100"
-                    animate={{y: [0, 30, 0]}}
-                    transition={{repeat: Infinity, duration: 1.5, ease: "easeInOut"}}
-                >
-                    <path
-                        d="M12 2v16m0 0l-6-6m6 6l6-6"
-                        stroke="currentColor"
-                        strokeWidth="2"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                    />
-                </motion.svg>
-            </div>
+            <div className="header_name">JUSTIN KAMPER</div>
+            <div className="header_about_me">short about me here</div>
         </div>
-        {/*MINIMALIST ARROW DK IF I END UP USING*/}
-        {/*<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">*/}
-        {/*    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>*/}
-        {/*    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>*/}
-        {/*    <g id="SVGRepo_iconCarrier">*/}
-        {/*        <path*/}
-        {/*            d="M5.70711 9.71069C5.31658 10.1012 5.31658 10.7344 5.70711 11.1249L10.5993 16.0123C11.3805 16.7927 12.6463 16.7924 13.4271 16.0117L18.3174 11.1213C18.708 10.7308 18.708 10.0976 18.3174 9.70708C17.9269 9.31655 17.2937 9.31655 16.9032 9.70708L12.7176 13.8927C12.3271 14.2833 11.6939 14.2832 11.3034 13.8927L7.12132 9.71069C6.7308 9.32016 6.09763 9.32016 5.70711 9.71069Z"*/}
-        {/*            fill="#0F0F0F"></path>*/}
-        {/*    </g>*/}
-        {/*</svg>*/}
 
         <div className="projects-container">
             <div className="project">
@@ -58,7 +27,6 @@ function App() {
                     In development
                 </div>
                 <div className="project-description">
-                    Risk analysis tool which enables users to create
                 </div>
             </div>
 

@@ -14,15 +14,23 @@ body {
 .header {
   font-family: "Lexend", serif;
   font-optical-sizing: auto;
-  font-weight: 600;
   font-style: normal;
-  font-size: 8em;
   color: aliceblue;
-  letter-spacing: .5rem;
   text-align: center;
   align-content: center;
   height: 100vh;
   user-select: none;
+}
+
+.header_name {
+  font-weight: 600;
+  font-size: 8em;
+  letter-spacing: .5rem;
+}
+
+.header_about_me {
+  font-weight: 400;
+  font-size: 4em;
 }
 
 .projects-container {
