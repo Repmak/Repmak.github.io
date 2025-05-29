@@ -1,10 +1,10 @@
 
 // https://create-react-app.dev/docs/deployment/
 
-git checkout main
-git add .
-git commit -m "new name and about me"
-git push origin main
+// git checkout main
+// git add .
+// git commit -m "new name and about me"
+// git push origin main
 
 import './App.css';
 import { motion, AnimatePresence } from 'motion/react';
