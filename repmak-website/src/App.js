@@ -1,10 +1,10 @@
 
 // https://create-react-app.dev/docs/deployment/
 
-// git checkout main
-// git add .
-// git commit -m "new name and about me"
-// git push origin main
+git checkout main
+git add .
+git commit -m "new name and about me"
+git push origin main
 
 import './App.css';
 import { motion, AnimatePresence } from 'motion/react';
@@ -15,7 +15,7 @@ function App() {
         <body>
         <div className="header">
             <div className="header_name">JUSTIN KAMPER</div>
-            <div className="header_about_me">short about me here</div>
+            <div className="header_about_me">I'm a penultimate-year Computer Science student at the University of St Andrews who enjoys designing thoughtful software that makes people curious to explore more. Scroll down to see what I've been working on.</div>
         </div>
 
         <div className="projects-container">

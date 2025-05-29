@@ -20,17 +20,24 @@ body {
   align-content: center;
   height: 100vh;
   user-select: none;
+  padding: 10em;
 }
 
 .header_name {
   font-weight: 600;
-  font-size: 8em;
-  letter-spacing: .5rem;
+  font-size: 9em;
+  letter-spacing: 0.5rem;
+  color: transparent;
+  background: radial-gradient(circle 1px, aliceblue 100%, transparent 100%);
+  background-size: 5px 5px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .header_about_me {
-  font-weight: 400;
-  font-size: 4em;
+  font-weight: 200;
+  font-size: 1.75em;
 }
 
 .projects-container {
