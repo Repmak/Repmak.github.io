@@ -19,7 +19,6 @@ body {
   text-align: center;
   align-content: center;
   height: 100vh;
-  user-select: none;
   padding: 10em;
 }
 
@@ -28,14 +27,14 @@ body {
   font-size: 9em;
   letter-spacing: 0.5rem;
   color: transparent;
-  background: radial-gradient(circle 1px, aliceblue 100%, transparent 100%);
+  background: radial-gradient(circle 1.5px, aliceblue 100%, transparent 100%);
   background-size: 5px 5px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.header_about_me {
+.header_tagline {
   font-weight: 200;
   font-size: 1.75em;
 }

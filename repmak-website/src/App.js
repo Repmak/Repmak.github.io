@@ -3,7 +3,7 @@
 
 // git checkout main
 // git add .
-// git commit -m "new name and about me"
+// git commit -m "update name and tagline"
 // git push origin main
 
 import './App.css';
@@ -15,7 +15,7 @@ function App() {
         <body>
         <div className="header">
             <div className="header_name">JUSTIN KAMPER</div>
-            <div className="header_about_me">I'm a penultimate-year Computer Science student at the University of St Andrews who enjoys designing thoughtful software that makes people curious to explore more. Scroll down to see what I've been working on.</div>
+            <div className="header_tagline">I'm a penultimate-year Computer Science student at the University of St Andrews who enjoys solving meaningful problems through forward-thinking software design. Scroll down to see what I've been working on.</div>
         </div>
 
         <div className="projects-container">
