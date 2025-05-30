@@ -19,24 +19,26 @@ body {
   text-align: center;
   align-content: center;
   height: 100vh;
-  padding: 10em;
+  padding-left: 12em;
+  padding-right: 12em;
+  padding-top: 5em;
 }
 
-.header_name {
+.header-name {
   font-weight: 600;
   font-size: 9em;
   letter-spacing: 0.5rem;
   color: transparent;
-  background: radial-gradient(circle 1.5px, aliceblue 100%, transparent 100%);
+  background: radial-gradient(circle 1.5px, aliceblue 90%, transparent 100%);
   background-size: 5px 5px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 
-.header_tagline {
+.header-tagline {
   font-weight: 200;
-  font-size: 1.75em;
+  font-size: 1.5em;
 }
 
 .projects-container {

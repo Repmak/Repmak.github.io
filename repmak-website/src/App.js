@@ -14,8 +14,10 @@ function App() {
         <html>
         <body>
         <div className="header">
-            <div className="header_name">JUSTIN KAMPER</div>
-            <div className="header_tagline">I'm a penultimate-year Computer Science student at the University of St Andrews who enjoys solving meaningful problems through forward-thinking software design. Scroll down to see what I've been working on.</div>
+            <div className="header-name">
+                <span>J</span><span>U</span><span>S</span><span>T</span><span>I</span><span>N</span><span>&nbsp;</span><span>K</span><span>A</span><span>M</span><span>P</span><span>E</span><span>R</span>
+            </div>
+            <div className="header-tagline">I'm a penultimate-year Computer Science student at the University of St Andrews who enjoys solving meaningful problems through forward-thinking software design. Scroll down to see what I've been working on.</div>
         </div>
 
         <div className="projects-container">
