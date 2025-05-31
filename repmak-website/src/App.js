@@ -1,77 +1,95 @@
-
-// https://create-react-app.dev/docs/deployment/
-
 // git checkout main
 // git add .
-// git commit -m "update name and tagline"
+// git commit -m "make sections 1, 2, 3 "
 // git push origin main
 
 import './App.css';
+import './id-1.css';
+import './id-2.css';
+import './id-3.css';
+import { useEffect, useRef } from "react";
 import { motion, AnimatePresence } from 'motion/react';
 
-function App() {
-    return (
-        <html>
-        <body>
-        <div className="header">
-            <div className="header-name">
-                <span>J</span><span>U</span><span>S</span><span>T</span><span>I</span><span>N</span><span>&nbsp;</span><span>K</span><span>A</span><span>M</span><span>P</span><span>E</span><span>R</span>
-            </div>
-            <div className="header-tagline">I'm a penultimate-year Computer Science student at the University of St Andrews who enjoys solving meaningful problems through forward-thinking software design. Scroll down to see what I've been working on.</div>
+
+const sections = [
+  {
+    id: 1,
+    content: (
+      <div className="header">
+        <div className="name">
+          {"JUSTIN KAMPER".split("").map((char, i) => (
+            <span key={i}>{char === " " ? "\u00A0" : char}</span>
+          ))}
         </div>
-
-        <div className="projects-container">
-            <div className="project">
-                <div className="project-title">
-                    Financial Risk Forecasting
-                </div>
-                <div className="project-status project-status-in-development">
-                    In development
-                </div>
-                <div className="project-description">
-                </div>
-            </div>
-
-            <div className="project">
-                <div className="project-title">
-                    Connect 4
-                </div>
-                <div className="project-status project-status-completed">
-                    Completed (06/2024 - 07/2024)
-                </div>
-                <div className="project-description">
-
-                </div>
-            </div>
-
-            <div className="project">
-                <div className="project-title">
-                    Bike Part Picker
-                </div>
-                <div className="project-status project-status-completed">
-                    Completed (01/2024 - 03/2024)
-                </div>
-                <div className="project-description">
-
-                </div>
-            </div>
-
-            <div className="project">
-                <div className="project-title">
-                    Auditorium Booking System
-                </div>
-                <div className="project-status project-status-completed">
-                    Completed (03/2023 - 05/2023)
-                </div>
-                <div className="project-description">
-
-                </div>
-            </div>
+        <div className="tagline">
+          I'm a penultimate-year Computer Science student at the University of St Andrews who enjoys solving meaningful problems through forward-thinking software design. Scroll down to see what I've been working on.
         </div>
+        <div className="links">
+          <a href="https://github.com/Repmak" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/justin-kamper/" target="_blank">Linkedin</a>
+        </div>
+      </div>
+    )
+  },
+  {
+    id: 2,
+    content: (
+      <div className="section-content">
+        <div className="tagline">Here are some things I've built...</div>
+      </div>
+    )
+  },
+  {
+    id: 3,
+    content: (
+      <div className="section-content">
+        <div className="tagline">More stuff I've built...</div>
+      </div>
+    )
+  }
+];
 
-        </body>
-        </html>
-    );
+export default function App() {
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    const container = containerRef.current;
+    let isThrottled = false;
+
+    const handleScroll = (e) => {
+      e.preventDefault();
+      if (isThrottled) return;
+
+      const direction = e.deltaY > 0 ? 1 : -1;
+      const currentScroll = container.scrollTop;
+      const next = Math.round((currentScroll + direction * window.innerHeight) / window.innerHeight) * window.innerHeight;
+
+      container.scrollTo({ top: next, behavior: "smooth" });
+
+      isThrottled = true;
+      setTimeout(() => (isThrottled = false), 1000); // control scroll speed
+    };
+
+    container.addEventListener("wheel", handleScroll, { passive: false });
+
+    return () => {
+      container.removeEventListener("wheel", handleScroll);
+    };
+  }, []);
+
+  return (
+    <div ref={containerRef} className="scroll-container">
+      {sections.map((section) => (
+        <motion.div
+          key={section.id}
+          className="section"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+          {section.content}
+        </motion.div>
+      ))}
+    </div>
+  );
 }
-
-export default App;

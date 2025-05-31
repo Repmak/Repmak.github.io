@@ -1,0 +1,53 @@
+.header {
+  font-family: "Lexend", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  color: aliceblue;
+  text-align: center;
+  height: 100vh;
+  padding: 3em 12em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.name {
+  font-weight: 600;
+  font-size: 9em;
+  letter-spacing: 0.7rem;
+  color: transparent;
+  background: radial-gradient(circle 1.5px, aliceblue 90%, transparent 100%);
+  background-size: 5px 5px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.tagline {
+  margin-top: 2em;
+  font-weight: 200;
+  font-size: 1.5em;
+  max-width: 40em;
+}
+
+.links {
+  position: absolute;
+  bottom: 3em;
+  display: flex;
+  gap: 4em;
+}
+
+.links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}

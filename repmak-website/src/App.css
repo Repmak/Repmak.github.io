@@ -11,36 +11,6 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.header {
-  font-family: "Lexend", serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  color: aliceblue;
-  text-align: center;
-  align-content: center;
-  height: 100vh;
-  padding-left: 12em;
-  padding-right: 12em;
-  padding-top: 5em;
-}
-
-.header-name {
-  font-weight: 600;
-  font-size: 9em;
-  letter-spacing: 0.5rem;
-  color: transparent;
-  background: radial-gradient(circle 1.5px, aliceblue 90%, transparent 100%);
-  background-size: 5px 5px;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.header-tagline {
-  font-weight: 200;
-  font-size: 1.5em;
-}
-
 .projects-container {
   margin-left: 30em;
   margin-right: 30em;
