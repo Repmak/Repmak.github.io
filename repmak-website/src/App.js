@@ -1,6 +1,6 @@
 // git checkout main
 // git add .
-// git commit -m "make sections 1, 2, 3 "
+// git commit -m "new icon"
 // git push origin main
 
 import './App.css';
