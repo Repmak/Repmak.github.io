@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.c2697468.css",
-    "main.js": "/static/js/main.00ea8485.js",
+    "main.css": "/static/css/main.8110f1f8.css",
+    "main.js": "/static/js/main.8464cc44.js",
     "static/js/453.3a2bc99d.chunk.js": "/static/js/453.3a2bc99d.chunk.js",
+    "static/media/auditorium booking system.gif": "/static/media/auditorium booking system.3d6e2e488ec47feb09d2.gif",
     "static/media/connect 4.gif": "/static/media/connect 4.8b7c49ee9e814696e7c1.gif",
     "static/media/financial risk analysis.png": "/static/media/financial risk analysis.b02fb17610febd57081a.png",
     "index.html": "/index.html",
-    "main.c2697468.css.map": "/static/css/main.c2697468.css.map",
-    "main.00ea8485.js.map": "/static/js/main.00ea8485.js.map",
+    "main.8110f1f8.css.map": "/static/css/main.8110f1f8.css.map",
+    "main.8464cc44.js.map": "/static/js/main.8464cc44.js.map",
     "453.3a2bc99d.chunk.js.map": "/static/js/453.3a2bc99d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c2697468.css",
-    "static/js/main.00ea8485.js"
+    "static/css/main.8110f1f8.css",
+    "static/js/main.8464cc44.js"
   ]
 }
