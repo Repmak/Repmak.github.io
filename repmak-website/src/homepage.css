@@ -1,37 +1,33 @@
+
 .homepage-container {
   text-align: center;
-  height: 100vh;
-  padding: 3em 12em;
+  min-height: 97vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   position: relative;
-  box-sizing: border-box;
 }
 
 .homepage-name {
   font-weight: 600;
-  font-size: 9em;
-  letter-spacing: 0.7rem;
-  color: transparent;
-  background: radial-gradient(circle 1.5px, aliceblue 90%, transparent 100%);
-  background-size: 5px 5px;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  font-size: clamp(4em, 8.3vw, 8.3vw);
+  letter-spacing: 0.1em;
 }
 
 .homepage-tagline {
-  margin-top: 2em;
   font-weight: 200;
-  font-size: 1.7em;
-  max-width: 40em;
+  font-size: clamp(1.15em, 1.5vw, 1.5vw);
+  max-width: 50em;
+  margin-top: 1em;
+  text-align: center;
+  word-break: break-word;
 }
 
 .homepage-links {
+  font-size: 1.15em;
   position: absolute;
-  bottom: 3em;
+  bottom: 5vh;
   display: flex;
   gap: 4em;
 }
@@ -39,7 +35,6 @@
 .homepage-links a {
   font-weight: 400;
   font-size: 1.3em;
-  display: inline-flex;
   align-items: center;
   gap: 0.5em;
   text-decoration: none;

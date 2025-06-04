@@ -5,31 +5,45 @@
 html, body {
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  height: 100%;
   scroll-behavior: smooth;
   background: #171717;
   font-family: "Lexend", serif;
-  font-style: normal;
   color: aliceblue;
 }
 
 .scroll-container {
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
   scroll-behavior: smooth;
 }
 
 .section {
-  height: 100vh;
-  width: 100%;
+  padding: 3vh 3vw;
   scroll-snap-align: start;
-  color: aliceblue;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
-  box-sizing: border-box;
+}
+
+.dotted-text {
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  background: radial-gradient(circle 1.5px, aliceblue 90%, transparent 100%);
+  background-size: 5px 5px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  white-space: normal;
+  overflow-wrap: break-word;
+}
+
+@media only screen and (orientation: portrait) {
+  .section {
+    padding: 0 3vw;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
