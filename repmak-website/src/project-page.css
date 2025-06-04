@@ -1,6 +1,6 @@
 .project-container {
   height: 100vh;
-  padding: 3em 12em;
+  padding: 3em 5em;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -16,7 +16,7 @@
 .project-name {
   font-weight: 600;
   font-size: 7em;
-  letter-spacing: 0.7rem;
+  letter-spacing: 0.3rem;
   color: transparent;
   background: radial-gradient(circle 1.5px, aliceblue 90%, transparent 100%);
   background-size: 5px 5px;
