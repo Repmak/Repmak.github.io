@@ -25,7 +25,6 @@
 }
 
 .homepage-links {
-  font-size: 1.15em;
   position: absolute;
   bottom: 5vh;
   display: flex;
@@ -36,11 +35,19 @@
   font-weight: 400;
   font-size: 1.3em;
   align-items: center;
-  gap: 0.5em;
   text-decoration: none;
   color: aliceblue;
 }
 
 .homepage-links a:hover {
   text-decoration: underline;
+}
+
+@media only screen and (orientation: portrait) {
+  .homepage-container {
+    text-align: center;
+    min-height: 100vh;
+    flex-direction: column;
+    position: relative;
+  }
 }

@@ -1,6 +1,6 @@
 // git checkout main
 // git add .
-// git commit -m "update name and tagline"
+// git commit -m "final"
 // git push origin main
 
 import './homepage.css';
@@ -10,7 +10,7 @@ import FinancialRiskAnalysis from "./assets/financial risk analysis.png"
 import AuditoriumBookingSystem from "./assets/auditorium booking system.gif"
 import { useEffect, useRef } from "react";
 import React from "react";
-import { motion, AnimatePresence } from 'motion/react';
+import { motion } from 'motion/react';
 
 
 const sections = [
@@ -31,7 +31,7 @@ const sections = [
                     )}
                 </div>
                 <div className="homepage-tagline">
-                    I'm a penultimate-year Computer Science student at the University of St Andrews who enjoys solving meaningful problems through forward-thinking software design.
+                    Studying Computer Science in my penultimate year at the University of St Andrews, I enjoy tackling meaningful problems through forward-thinking software design.
                     <br/><br/>
                     Scroll down to see what I've been working on.
                 </div>
@@ -47,16 +47,18 @@ const sections = [
         content: (
             <div className="project-container">
                 <div className="project-name dotted-text">
-                    {"Financial Risk Forecasting".split("").map((char, i) =>
-                        char === " " ? (
-                            <React.Fragment key={i}>
-                                {" "}
-                                <wbr/>
-                            </React.Fragment>
-                        ) : (
-                            <span key={i}>{char}</span>
-                        )
-                    )}
+                    <a href="https://github.com/Repmak/Financial-Risk-Forecasting" target="_blank">
+                        {"Financial Risk Forecasting".split("").map((char, i) =>
+                            char === " " ? (
+                                <React.Fragment key={i}>
+                                    {" "}
+                                    <wbr/>
+                                </React.Fragment>
+                            ) : (
+                                <span key={i}>{char}</span>
+                            )
+                        )}
+                    </a>
                 </div>
 
                 <div className="project-dates">
@@ -65,7 +67,7 @@ const sections = [
 
                 <div className="project-content">
                     <figure>
-                        <img src={FinancialRiskAnalysis} alt="Financial Risk Analysis demo"/>
+                        <img src={FinancialRiskAnalysis} className="project-image" alt="Financial Risk Analysis demo"/>
                         <figcaption>
                             Scheduling tasks and generating evaluations of associated financial risks.
                         </figcaption>
@@ -83,16 +85,18 @@ const sections = [
         content: (
             <div className="project-container">
                 <div className="project-name dotted-text">
-                    {"Connect 4".split("").map((char, i) =>
-                        char === " " ? (
-                            <React.Fragment key={i}>
-                                {" "}
-                                <wbr/>
-                            </React.Fragment>
-                        ) : (
-                            <span key={i}>{char}</span>
-                        )
-                    )}
+                    <a href="https://github.com/Repmak/Connect-4" target="_blank">
+                        {"Connect 4".split("").map((char, i) =>
+                            char === " " ? (
+                                <React.Fragment key={i}>
+                                    {" "}
+                                    <wbr/>
+                                </React.Fragment>
+                            ) : (
+                                <span key={i}>{char}</span>
+                            )
+                        )}
+                    </a>
                 </div>
 
                 <div className="project-dates">
@@ -103,7 +107,7 @@ const sections = [
                     <div className="project-tagline">
                         A Connect 4 game built with Pyglet, featuring an interactive GUI and an AI opponent powered by the minimax algorithm.
                         <br/><br/>
-                        <b>Fun fact:</b> This was the very code that helped gain permission for second-year direct entry at university.
+                        (This project played a key role in securing direct entry into the second year of the Computer Science program at the University of St Andrews.)
                     </div>
 
                     <figure>
@@ -121,16 +125,18 @@ const sections = [
         content: (
             <div className="project-container">
                 <div className="project-name dotted-text">
-                    {"Auditorium Booking System".split("").map((char, i) =>
-                        char === " " ? (
-                            <React.Fragment key={i}>
-                                {" "}
-                                <wbr/>
-                            </React.Fragment>
-                        ) : (
-                            <span key={i}>{char}</span>
-                        )
-                    )}
+                    <a href="https://github.com/Repmak/Auditorium-Booking-System" target="_blank">
+                        {"Auditorium Booking System".split("").map((char, i) =>
+                            char === " " ? (
+                                <React.Fragment key={i}>
+                                    {" "}
+                                    <wbr/>
+                                </React.Fragment>
+                            ) : (
+                                <span key={i}>{char}</span>
+                            )
+                        )}
+                    </a>
                 </div>
 
                 <div className="project-dates">

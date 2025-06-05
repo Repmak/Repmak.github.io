@@ -15,6 +15,7 @@
 .project-dates {
   font-size: clamp(1rem, 1vw, 1vw);
   font-weight: 400;
+  margin-top: 0.3em;
 }
 
 .project-content {
@@ -30,8 +31,7 @@
 }
 
 figure img {
-  max-width: 70vw;
-  height: auto;
+  width: 50vw;
   border-radius: 8px;
   object-fit: cover;
 }
@@ -51,11 +51,12 @@ figure figcaption {
   }
 
   .project-content {
+    margin-top: 2em;
     flex-direction: column;
   }
 
-  img {
-    width: 95vw;
+  figure img {
+    width: 80vw;
     height: auto;
     border-radius: 8px;
     object-fit: cover;
