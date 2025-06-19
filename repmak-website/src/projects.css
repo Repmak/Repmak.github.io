@@ -31,7 +31,9 @@
 }
 
 figure img {
-  width: 50vw;
+  max-width: 50vw;
+  height: auto;
+  display: block;
   border-radius: 8px;
   object-fit: cover;
 }

@@ -1,6 +1,6 @@
 // git checkout main
 // git add .
-// git commit -m "final"
+// git commit -m "update fin risk"
 // git push origin main
 
 import './homepage.css';
