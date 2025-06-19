@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.a2528ed0.css",
+    "main.css": "/static/css/main.d25e7354.css",
     "main.js": "/static/js/main.31ba5e94.js",
     "static/js/453.3a2bc99d.chunk.js": "/static/js/453.3a2bc99d.chunk.js",
     "static/media/auditorium booking system.gif": "/static/media/auditorium booking system.3d6e2e488ec47feb09d2.gif",
     "static/media/connect 4.gif": "/static/media/connect 4.8b7c49ee9e814696e7c1.gif",
     "static/media/financial risk analysis.png": "/static/media/financial risk analysis.b02fb17610febd57081a.png",
     "index.html": "/index.html",
-    "main.a2528ed0.css.map": "/static/css/main.a2528ed0.css.map",
+    "main.d25e7354.css.map": "/static/css/main.d25e7354.css.map",
     "main.31ba5e94.js.map": "/static/js/main.31ba5e94.js.map",
     "453.3a2bc99d.chunk.js.map": "/static/js/453.3a2bc99d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2528ed0.css",
+    "static/css/main.d25e7354.css",
     "static/js/main.31ba5e94.js"
   ]
 }
