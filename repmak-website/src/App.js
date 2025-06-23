@@ -1,11 +1,7 @@
-// git checkout main
-// git add .
-// git commit -m "update fin risk"
-// git push origin main
-
 import './homepage.css';
 import './projects.css';
 import Connect4 from "./assets/connect 4.gif"
+import Jolt from "./assets/jolt.gif"
 import FinancialRiskAnalysis from "./assets/financial risk analysis.png"
 import AuditoriumBookingSystem from "./assets/auditorium booking system.gif"
 import { useEffect, useRef } from "react";
@@ -41,7 +37,7 @@ const sections = [
                 </div>
             </div>
         )
-     },
+    },
     {
         id: 2,
         content: (
@@ -85,6 +81,47 @@ const sections = [
         content: (
             <div className="project-container">
                 <div className="project-name dotted-text">
+                    <a href="https://github.com/Repmak/Jolt" target="_blank">
+                        {"Jolt".split("").map((char, i) =>
+                            char === " " ? (
+                                <React.Fragment key={i}>
+                                    {" "}
+                                    <wbr/>
+                                </React.Fragment>
+                            ) : (
+                                <span key={i}>{char}</span>
+                            )
+                        )}
+                    </a>
+                </div>
+
+                <div className="project-dates">
+                    Developed from 06/2025 - 06/2025
+                </div>
+
+                <div className="project-content">
+                    <figure>
+                        <img src={Jolt} className="project-image" alt="Financial Risk Analysis demo"/>
+                        <figcaption>
+                            Generating some Indeed job insights when searching for a Sales Assistant position.
+                        </figcaption>
+                    </figure>
+
+                    <div className="project-tagline">
+                        A Gemini-powered Chrome extension that gives users some quick insights by matching their job
+                        preferences, availability, and experience to ideal roles.
+                        <br/><br/>
+                        (Short project developed within 2 days!)
+                    </div>
+                </div>
+            </div>
+        )
+    },
+    {
+        id: 4,
+        content: (
+            <div className="project-container">
+                <div className="project-name dotted-text">
                     <a href="https://github.com/Repmak/Connect-4" target="_blank">
                         {"Connect 4".split("").map((char, i) =>
                             char === " " ? (
@@ -121,7 +158,7 @@ const sections = [
         )
     },
     {
-        id: 4,
+        id: 5,
         content: (
             <div className="project-container">
                 <div className="project-name dotted-text">
