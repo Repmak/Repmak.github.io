@@ -101,7 +101,7 @@ const sections = [
 
                 <div className="project-content">
                     <figure>
-                        <img src={Jolt} className="project-image" alt="Financial Risk Analysis demo"/>
+                        <img src={Jolt} className="project-image" alt="Jolt demo"/>
                         <figcaption>
                             Generating some Indeed job insights when searching for a Sales Assistant position.
                         </figcaption>
@@ -111,7 +111,7 @@ const sections = [
                         A Gemini-powered Chrome extension that gives users some quick insights by matching their job
                         preferences, availability, and experience to ideal roles.
                         <br/><br/>
-                        (Short project developed within 2 days!)
+                        (This is a short project developed within 2 days! I plan to add more features in the future.)
                     </div>
                 </div>
             </div>
