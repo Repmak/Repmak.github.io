@@ -111,7 +111,7 @@ const sections = [
                         A Gemini-powered Chrome extension that gives users some quick insights by matching their job
                         preferences, availability, and experience to ideal roles.
                         <br/><br/>
-                        (This is a short project developed within 2 days! I plan to add more features in the future.)
+                        (This is a short project developed within a day, I plan to add more features in the future.)
                     </div>
                 </div>
             </div>
