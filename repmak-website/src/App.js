@@ -68,7 +68,6 @@ const sections = [
                             Analysing how scheduling tasks impact associated financial risks.
                         </figcaption>
                     </figure>
-
                     <div className="project-tagline">
                         JustInTime is an intelligent project planning tool built with TensorFlow and scikit-learn to
                         forecast delays and risks based on historical project data.
@@ -105,19 +104,18 @@ const sections = [
                 </div>
 
                 <div className="project-content">
-                    <figure>
-                        <img src={Jolt} className="project-image" alt="Jolt demo"/>
-                        <figcaption>
-                            Generating some Indeed job insights when searching for a Sales Assistant position.
-                        </figcaption>
-                    </figure>
-
                     <div className="project-tagline">
                         A Gemini-powered Chrome extension that gives users some quick insights by matching their job
                         preferences, availability, and experience to ideal roles.
                         <br/><br/>
                         (This is a short project developed within a day, I plan to add more features in the future.)
                     </div>
+                    <figure>
+                        <img src={Jolt} className="project-image" alt="Jolt demo"/>
+                        <figcaption>
+                            Generating some Indeed job insights when searching for a Sales Assistant position.
+                        </figcaption>
+                    </figure>
                 </div>
             </div>
         )
@@ -146,18 +144,19 @@ const sections = [
                 </div>
 
                 <div className="project-content">
-                    <div className="project-tagline">
-                        A Connect 4 game built with Pyglet, featuring an interactive GUI and an AI opponent powered by the minimax algorithm.
-                        <br/><br/>
-                        (This project played a key role in securing direct entry into the second year of the Computer Science program at the University of St Andrews.)
-                    </div>
-
                     <figure>
                         <img src={Connect4} alt="Connect 4 demo"/>
                         <figcaption>
                             A quick game of Connect 4.
                         </figcaption>
                     </figure>
+                    <div className="project-tagline">
+                        A Connect 4 game built with Pyglet, featuring an interactive GUI and an AI opponent powered by
+                        the minimax algorithm.
+                        <br/><br/>
+                        (This project played a key role in securing direct entry into the second year of the Computer
+                        Science program at the University of St Andrews.)
+                    </div>
                 </div>
             </div>
         )
@@ -186,16 +185,16 @@ const sections = [
                 </div>
 
                 <div className="project-content">
+                    <div className="project-tagline">
+                        An auditorium booking system built with Flask, HTML, JavaScript, CSS, and an SQL database
+                        featuring an intuitive interface for reserving seats to movies and plays.
+                    </div>
                     <figure>
                         <img src={AuditoriumBookingSystem} alt="Auditorium Booking System demo"/>
                         <figcaption>
                             Reserving 5 seats for a showing of Ratatouille at 10 PM.
                         </figcaption>
                     </figure>
-
-                    <div className="project-tagline">
-                        An auditorium booking system built with Flask, HTML, JavaScript, CSS, and an SQL database featuring an intuitive interface for reserving seats to movies and plays.
-                    </div>
                 </div>
             </div>
         )

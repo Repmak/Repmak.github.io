@@ -31,7 +31,8 @@
 }
 
 figure img {
-  max-width: 40vw;
+  max-width: 55vw;
+  max-height: 60vw;
   height: auto;
   display: block;
   border-radius: 8px;
