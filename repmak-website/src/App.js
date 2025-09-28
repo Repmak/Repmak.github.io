@@ -1,9 +1,9 @@
 import './homepage.css';
 import './projects.css';
-import Connect4 from "./assets/connect 4.gif"
-import Jolt from "./assets/jolt.gif"
-import FinancialRiskAnalysis from "./assets/financial risk analysis.png"
-import AuditoriumBookingSystem from "./assets/auditorium booking system.gif"
+import JustInTime from "./assets/justintime.gif";
+import Jolt from "./assets/jolt.gif";
+import Connect4 from "./assets/connect 4.gif";
+import AuditoriumBookingSystem from "./assets/auditorium booking system.gif";
 import { useEffect, useRef } from "react";
 import React from "react";
 import { motion } from 'motion/react';
@@ -43,8 +43,8 @@ const sections = [
         content: (
             <div className="project-container">
                 <div className="project-name dotted-text">
-                    <a href="https://github.com/Repmak/Financial-Risk-Forecasting" target="_blank">
-                        {"Financial Risk Forecasting".split("").map((char, i) =>
+                    {/*<a href="https://github.com/Repmak/Financial-Risk-Forecasting" target="_blank">*/}
+                        {"JustInTime".split("").map((char, i) =>
                             char === " " ? (
                                 <React.Fragment key={i}>
                                     {" "}
@@ -54,7 +54,7 @@ const sections = [
                                 <span key={i}>{char}</span>
                             )
                         )}
-                    </a>
+                    {/*</a>*/}
                 </div>
 
                 <div className="project-dates">
@@ -63,14 +63,19 @@ const sections = [
 
                 <div className="project-content">
                     <figure>
-                        <img src={FinancialRiskAnalysis} className="project-image" alt="Financial Risk Analysis demo"/>
+                        <img src={JustInTime} className="project-image" alt="JustInTime demo"/>
                         <figcaption>
-                            Scheduling tasks and generating evaluations of associated financial risks.
+                            Analysing how scheduling tasks impact associated financial risks.
                         </figcaption>
                     </figure>
 
                     <div className="project-tagline">
-                        A TensorFlow-based tool designed to optimise task scheduling by analysing data from previous projects. The backend uses Flask for efficient routing, while the frontend is built with React to provide a responsive user interface.
+                        JustInTime is an intelligent project planning tool built with TensorFlow and scikit-learn to
+                        forecast delays and risks based on historical project data.
+                        <br/><br/>
+                        By processing inputs such as team assignments, supplier details, budgets, and target completion
+                        dates, it identifies potential bottlenecks early and provides actionable insights to optimise
+                        scheduling and keep projects on track.
                     </div>
                 </div>
             </div>
@@ -81,7 +86,7 @@ const sections = [
         content: (
             <div className="project-container">
                 <div className="project-name dotted-text">
-                    <a href="https://github.com/Repmak/Jolt" target="_blank">
+                    {/*<a href="https://github.com/Repmak/Jolt" target="_blank">*/}
                         {"Jolt".split("").map((char, i) =>
                             char === " " ? (
                                 <React.Fragment key={i}>
@@ -92,7 +97,7 @@ const sections = [
                                 <span key={i}>{char}</span>
                             )
                         )}
-                    </a>
+                    {/*</a>*/}
                 </div>
 
                 <div className="project-dates">
