@@ -125,7 +125,7 @@ const sections = [
         content: (
             <div className="project-container">
                 <div className="project-name dotted-text">
-                    <a href="https://github.com/Repmak/Connect-4" target="_blank">
+                    {/*<a href="https://github.com/Repmak/Connect-4" target="_blank">*/}
                         {"Connect 4".split("").map((char, i) =>
                             char === " " ? (
                                 <React.Fragment key={i}>
@@ -136,7 +136,7 @@ const sections = [
                                 <span key={i}>{char}</span>
                             )
                         )}
-                    </a>
+                    {/*</a>*/}
                 </div>
 
                 <div className="project-dates">
@@ -166,7 +166,7 @@ const sections = [
         content: (
             <div className="project-container">
                 <div className="project-name dotted-text">
-                    <a href="https://github.com/Repmak/Auditorium-Booking-System" target="_blank">
+                    {/*<a href="https://github.com/Repmak/Auditorium-Booking-System" target="_blank">*/}
                         {"Auditorium Booking System".split("").map((char, i) =>
                             char === " " ? (
                                 <React.Fragment key={i}>
@@ -177,7 +177,7 @@ const sections = [
                                 <span key={i}>{char}</span>
                             )
                         )}
-                    </a>
+                    {/*</a>*/}
                 </div>
 
                 <div className="project-dates">

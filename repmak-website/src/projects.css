@@ -46,22 +46,28 @@ figure figcaption {
 }
 
 @media only screen and (orientation: portrait) {
-  .project-container {
-    text-align: center;
-    min-height: 100vh;
+  .project-content {
     flex-direction: column;
-    position: relative;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
   }
 
-  .project-content {
-    margin-top: 2em;
+  figure {
+    display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   figure img {
     width: 80vw;
     height: auto;
-    border-radius: 8px;
-    object-fit: cover;
+    margin: 0 auto;
+  }
+
+  .project-tagline {
+    max-width: 90%;
+    margin: 1em auto 0;
+    text-align: center;
   }
 }
