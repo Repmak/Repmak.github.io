@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Lexend:wght@100..900&display=swap');
+
+:root {
+    --bg-color: #1f1f33;
+    /*--primary-values: 218, 16, 107; todo?? */
+    --primary-values: 241, 109, 52;
+    --secondary-values: 255, 152, 106;
+    --tertiary-values: 150, 220, 255;
+
+    --bg-container-color: rgba(var(--primary-values), 0.12);
+    --container-shadow: rgba(var(--tertiary-values), 0.15);
+
+    --primary-color: rgb(var(--primary-values));
+    --secondary-color: rgb(var(--secondary-values));
+    --tertiary-color: rgb(var(--tertiary-values));
+}
+
+html, body { margin: 0; padding: 0; background: var(--bg-color); font-optical-sizing: auto; }
+main { margin: 0.75rem; display: flex; flex-direction: column; gap: 0.5rem; }
+
+.container {
+    border-radius: 15px;
+    box-sizing: border-box;
+    border: 1px solid var(--primary-color);
+    padding: 0.35rem;
+    transition-duration: 0.3s;
+    background-color: var(--bg-container-color);
+}
+
+.container:hover {
+    box-shadow: var(--container-shadow) 0 5px 10px;
+}
+
+h1 {
+    font-family: "Lexend", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: var(--primary-color)
+}
+
+h2 {
+    font-family: "Lexend", sans-serif;
+    font-size: 1.05rem;
+    font-weight: 400;
+    color: var(--secondary-color)
+}

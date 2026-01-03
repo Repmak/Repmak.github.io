@@ -1,0 +1,21 @@
+
+:root {
+    --mouse-x: -500px;
+    --mouse-y: -500px;
+}
+
+.global-glow-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: -1;
+    background: radial-gradient(
+        1000px circle at var(--mouse-x) var(--mouse-y),
+        rgba(150, 220, 255, 0.03),
+        transparent 50%
+    );
+    transition: opacity 0.3s;
+}
