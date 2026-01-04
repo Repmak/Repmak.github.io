@@ -1,4 +1,5 @@
 import '../App.css';
+import '../LiquidGlass/LiquidGlass.css';
 import './Projects.css';
 import {projects} from "./projects-data";
 
@@ -6,7 +7,7 @@ import {projects} from "./projects-data";
 export default function Projects() {
     return (
         <>
-            <div className="container project">
+            <div className="project">
                 {projects.map((project) => (
                     <div className="project">
                         <h2>
