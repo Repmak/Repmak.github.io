@@ -19,7 +19,7 @@ export default function Projects() {
 
                         <div className="project-content">
                             <figure>
-                                <img src={project.image} className="project-image" alt={project.title} />
+                                {/*<img src={project.image} className="project-image" alt={project.title} />*/}
                                 <figcaption>{project.imageCaption}</figcaption>
 
                             </figure>
