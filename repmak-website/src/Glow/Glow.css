@@ -14,7 +14,7 @@
     z-index: -1;
     background: radial-gradient(
         1000px circle at var(--mouse-x) var(--mouse-y),
-        rgba(150, 220, 255, 0.03),
+        rgba(255, 255, 255, 0.03),
         transparent 50%
     );
     transition: opacity 0.3s;

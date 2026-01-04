@@ -1,10 +1,10 @@
 
-.container.navigation-menu {
+.navigation-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom-left-radius: 6px;
-    border-bottom-right-radius: 6px;
+    margin: auto;
+    min-width: fit-content;
 }
 
 .nav-group {
@@ -13,7 +13,7 @@
     align-items: center;
 }
 
-.nav-link {
+.social-link {
     font-family: "Lexend", sans-serif;
     font-size: 1.15rem;
     font-weight: 500;
@@ -23,19 +23,4 @@
     border-radius: 8px;
     text-decoration: none;
     transition: 0.3s;
-}
-
-.nav-link:hover {
-    background-color: var(--primary-color);
-    color: var(--tertiary-color);
-}
-
-.nav-link.active {
-    background-color: var(--primary-color);
-    color: var(--tertiary-color);
-}
-
-.social {
-    font-weight: 500;
-    align-items: center;
 }
