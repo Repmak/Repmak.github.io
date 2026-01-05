@@ -1,0 +1,17 @@
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tech-stack-container {
+    display: flex;
+    gap: 0.5rem;
+    /*text-wrap: nowrap;*/
+}
+
+.tech-stack-bubble {
+    padding: 0.15rem 0.5rem;
+    border-radius: 999px;
+    background-color: var(--tech-stack-bubble-color);
+}

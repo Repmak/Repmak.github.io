@@ -1,6 +1,6 @@
 
 :root {
-    --bg-color: #222222;
+    --bg-color: rgb(34, 34, 34);
     --primary-values: 235, 240, 256;
     --secondary-values: 201, 24, 74;
     --tertiary-values: 150, 220, 255;
@@ -12,27 +12,34 @@
     --container-glow: rgba(var(--primary-values), 0.15);
     --container-glow-border: rgba(var(--primary-values), 0.15);
     --container-glow-hover: rgba(var(--secondary-values), 0.2);
+
+    --tech-stack-bubble-color: rgb(34, 34, 34);
+    --tech-stack-text-color: rgb(228, 228, 228);
 }
 
 html, body { margin: 0; padding: 0; background: var(--bg-color); font-optical-sizing: auto; }
-/*body { display: flex; justify-content: center; }*/
 
 main {
     margin: 1rem auto;
     display: grid;
     max-width: 1200px;
-    grid-template-columns: repeat(5, 1fr);  /* Split width into 5 columns. */
-    grid-auto-rows: 240px;  /* Height for 1 row. */
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    /*grid-auto-rows: 150px;*/
     gap: 1rem;
+    /*grid-auto-flow: dense;*/
 }
 
 .widget-container {
-    background-color: var(--bg-color);
-    padding: 1rem;
-    display: flex;
+    padding: 0.75rem 1.25rem 0.75rem 1.25rem;
     justify-content: center;
     border-radius: 30px;
+    overflow: hidden;
 }
+
+.widget-color-1 { background-color: #c9184a; color: #dee2e6; }
+.widget-color-2 { background-color: #c0d820; color: #222222; }
+.widget-color-3 { background-color: #2a9d8f; color: #dee2e6; }
+.widget-color-4 { background-color: #53068c; color: #8ec9d6; }
 
 .liquid-glass-bg {
 

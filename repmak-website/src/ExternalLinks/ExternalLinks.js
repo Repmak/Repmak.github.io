@@ -6,7 +6,7 @@ import './ExternalLinks.css';
 
 export default function ExternalLinks() {
     return (
-        <div className="widget-container" style={{ gridColumn: 'span 2', gridRow: 'span 1', backgroundColor: ''}}>
+        <div className="widget-container" style={{ gridColumn: 'span 2', backgroundColor: ''}}>
             github and linkedin icons
         </div>
     );
