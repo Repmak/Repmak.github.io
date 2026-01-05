@@ -1,33 +1,30 @@
-import NavigationBar from "./NavigationBar/NavigationBar";
-import AboutMe from "./AboutMe/AboutMe";
-import Projects from "./Projects/Projects";
-import BackgroundGradient from "./BackgroundGradient/BackgroundGradient";
-import LiquidGlass from "./LiquidGlass/LiquidGlass";
-import Glow from "./Glow/Glow";
+import React from 'react';
+import AboutMe from './AboutMe/AboutMe';
+import ExternalLinks from './ExternalLinks/ExternalLinks';
+import Project from './Project/Project';
 import './App.css';
+import {projects} from './projects-data';
 
 
 export default function App() {
     return (
-        <>
-            {/*<Glow/>*/}
-            <main>
-                <LiquidGlass>
-                    <NavigationBar />
-                </LiquidGlass>
-                {/*<BackgroundGradient BLrad='6px' BRrad='6px'>*/}
-                {/*    <NavigationBar />*/}
-                {/*</BackgroundGradient>*/}
+        <main>
+            <AboutMe />
+            <ExternalLinks />
 
-                <div className="content">
-                    {/*<BackgroundGradient TLrad='6px' TRrad='6px'>*/}
-                    {/*    <AboutMe />*/}
-                    {/*</BackgroundGradient>*/}
-                    {/*<BackgroundGradient TLrad='6px' TRrad='6px'>*/}
-                    {/*    <Projects />*/}
-                    {/*</BackgroundGradient>*/}
-                </div>
-            </main>
-        </>
+            {projects.map((project) => (
+                <Project
+                    title={project.title}
+                    dates={project.dates}
+                    imageCaption={project.imageCaption}
+                    description={project.description}
+                    githubUrl={project.githubUrl}
+                    publicRepo={project.publicRepo}
+                    cols={project.cols}
+                    rows={project.rows}
+                    bgColour={project.bgColour}
+                />
+            ))}
+        </main>
     );
 }
