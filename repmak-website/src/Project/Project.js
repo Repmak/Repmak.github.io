@@ -19,19 +19,7 @@ export default function Project({
             <h1>{title}</h1>
             <h2>{dates}</h2>
 
-            <div className="project-content">
-                {imageLeft && image && (
-                    <figure>
-                        <img src={image} className="project-image" alt="demo"/>
-                    </figure>
-                )}
-                <p>{description}</p>
-                {!imageLeft && image && (
-                    <figure>
-                        <img src={image} className="project-image" alt="demo"/>
-                    </figure>
-                )}
-            </div>
+            <p>{description}</p>
 
 
             <div className="project-footer">
