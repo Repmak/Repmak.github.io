@@ -1,5 +1,6 @@
 import './homepage.css';
 import './projects.css';
+import PromptableTraceback from "./assets/promptable traceback.png";
 import JustInTime from "./assets/justintime.gif";
 import Jolt from "./assets/jolt.gif";
 import Connect4 from "./assets/connect 4.gif";
@@ -17,10 +18,7 @@ const sections = [
                 <div className="homepage-name dotted-text">
                     {"JUSTIN KAMPER".split("").map((char, i) =>
                         char === " " ? (
-                            <React.Fragment key={i}>
-                                {" "}
-                                <wbr/>
-                            </React.Fragment>
+                            <React.Fragment key={i}>{" "}<wbr/></React.Fragment>
                         ) : (
                             <span key={i}>{char}</span>
                         )
@@ -38,18 +36,49 @@ const sections = [
             </div>
         )
     },
+    // {
+    //     id: 2,
+    //     content: (
+    //         <div className="project-container">
+    //             <div className="project-name dotted-text">
+    //                 {/*<a href="https://github.com/Repmak/teehee-might-delete" target="_blank">*/}
+    //                     {"Byte-Level BPE".split("").map((char, i) =>
+    //                         char === " " ? (
+    //                             <React.Fragment key={i}>{" "}<wbr/></React.Fragment>
+    //                         ) : (
+    //                             <span key={i}>{char}</span>
+    //                         )
+    //                     )}
+    //                 {/*</a>*/}
+    //             </div>
+    //
+    //             <div className="project-dates">
+    //                 In development since 01/2026
+    //             </div>
+    //
+    //             <div className="project-content">
+    //                 <div className="project-tagline">
+    //                     Currently developing a Byte-Level Byte Pair Encoding tokeniser from scratch in C++. I plan to expand this project to seamlessly load Hugging Face transformers directly within C++ environments for NLP.
+    //                 </div>
+    //                 <figure>
+    //                     <img src={JustInTime} className="project-image" alt="Byte-Level BPE demo"/>
+    //                     <figcaption>
+    //
+    //                     </figcaption>
+    //                 </figure>
+    //             </div>
+    //         </div>
+    //     )
+    // },
     {
-        id: 2,
+        id: 3,
         content: (
             <div className="project-container">
                 <div className="project-name dotted-text">
-                    {/*<a href="https://github.com/Repmak/Financial-Risk-Forecasting" target="_blank">*/}
-                        {"JustInTime".split("").map((char, i) =>
+                    {/*<a href="https://github.com/Repmak/promptable-traceback" target="_blank">*/}
+                        {"Promptable Traceback".split("").map((char, i) =>
                             char === " " ? (
-                                <React.Fragment key={i}>
-                                    {" "}
-                                    <wbr/>
-                                </React.Fragment>
+                                <React.Fragment key={i}>{" "}<wbr/></React.Fragment>
                             ) : (
                                 <span key={i}>{char}</span>
                             )
@@ -58,7 +87,41 @@ const sections = [
                 </div>
 
                 <div className="project-dates">
-                    In development since 06/2025
+                    In development since 01/2026
+                </div>
+
+                <div className="project-content">
+                    <div className="project-tagline">
+                        Lightweight Python library designed to streamline AI-assisted debugging by automatically capturing tracebacks, variable states, and surrounding code context. It formats the 'state of the world' into LLM-optimised reports, featuring built-in security masking to protect sensitive data during the debugging process.
+                    </div>
+                    <figure>
+                        <img src={PromptableTraceback} className="project-image" alt="Promptable Traceback demo"/>
+                        <figcaption>
+                            Snippet from the README document.
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        )
+    },
+    {
+        id: 4,
+        content: (
+            <div className="project-container">
+                <div className="project-name dotted-text">
+                    {/*<a href="https://github.com/Repmak/Financial-Risk-Forecasting" target="_blank">*/}
+                        {"JustInTime".split("").map((char, i) =>
+                            char === " " ? (
+                                <React.Fragment key={i}>{" "}<wbr/></React.Fragment>
+                            ) : (
+                                <span key={i}>{char}</span>
+                            )
+                        )}
+                    {/*</a>*/}
+                </div>
+
+                <div className="project-dates">
+                    Developed from 06/2025 - 12/2025
                 </div>
 
                 <div className="project-content">
@@ -81,17 +144,14 @@ const sections = [
         )
     },
     {
-        id: 3,
+        id: 5,
         content: (
             <div className="project-container">
                 <div className="project-name dotted-text">
                     {/*<a href="https://github.com/Repmak/Jolt" target="_blank">*/}
                         {"Jolt".split("").map((char, i) =>
                             char === " " ? (
-                                <React.Fragment key={i}>
-                                    {" "}
-                                    <wbr/>
-                                </React.Fragment>
+                                <React.Fragment key={i}>{" "}<wbr/></React.Fragment>
                             ) : (
                                 <span key={i}>{char}</span>
                             )
@@ -107,13 +167,11 @@ const sections = [
                     <div className="project-tagline">
                         A Gemini-powered Chrome extension that gives users some quick insights by matching their job
                         preferences, availability, and experience to ideal roles.
-                        <br/><br/>
-                        (This is a short project developed within a day, I plan to add more features in the future.)
                     </div>
                     <figure>
                         <img src={Jolt} className="project-image" alt="Jolt demo"/>
                         <figcaption>
-                            Generating some Indeed job insights when searching for a Sales Assistant position.
+                            Generating Indeed job insights when searching for a Sales Assistant position.
                         </figcaption>
                     </figure>
                 </div>
@@ -121,17 +179,14 @@ const sections = [
         )
     },
     {
-        id: 4,
+        id: 6,
         content: (
             <div className="project-container">
                 <div className="project-name dotted-text">
                     {/*<a href="https://github.com/Repmak/Connect-4" target="_blank">*/}
                         {"Connect 4".split("").map((char, i) =>
                             char === " " ? (
-                                <React.Fragment key={i}>
-                                    {" "}
-                                    <wbr/>
-                                </React.Fragment>
+                                <React.Fragment key={i}>{" "}<wbr/></React.Fragment>
                             ) : (
                                 <span key={i}>{char}</span>
                             )
@@ -153,26 +208,20 @@ const sections = [
                     <div className="project-tagline">
                         A Connect 4 game built with Pyglet, featuring an interactive GUI and an AI opponent powered by
                         the minimax algorithm.
-                        <br/><br/>
-                        (This project played a key role in securing direct entry into the second year of the Computer
-                        Science program at the University of St Andrews.)
                     </div>
                 </div>
             </div>
         )
     },
     {
-        id: 5,
+        id: 7,
         content: (
             <div className="project-container">
                 <div className="project-name dotted-text">
                     {/*<a href="https://github.com/Repmak/Auditorium-Booking-System" target="_blank">*/}
                         {"Auditorium Booking System".split("").map((char, i) =>
                             char === " " ? (
-                                <React.Fragment key={i}>
-                                    {" "}
-                                    <wbr/>
-                                </React.Fragment>
+                                <React.Fragment key={i}>{" "}<wbr/></React.Fragment>
                             ) : (
                                 <span key={i}>{char}</span>
                             )
@@ -192,7 +241,7 @@ const sections = [
                     <figure>
                         <img src={AuditoriumBookingSystem} alt="Auditorium Booking System demo"/>
                         <figcaption>
-                            Reserving 5 seats for a showing of Ratatouille at 10 PM.
+                            Reserving 5 seats for a showing of Ratatouille.
                         </figcaption>
                     </figure>
                 </div>

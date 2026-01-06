@@ -43,7 +43,7 @@
   text-decoration: underline;
 }
 
-@media only screen and (orientation: portrait) {
+@media only screen and (max-width: 800px), (orientation: portrait) {
   .homepage-container {
     text-align: center;
     min-height: 100vh;
