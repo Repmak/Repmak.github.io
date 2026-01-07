@@ -31,32 +31,32 @@
 html, body { margin: 0; padding: 0; background: var(--bg-color); font-optical-sizing: auto; }
 
 main {
-    display: grid;
-    grid-template-columns: 1fr minmax(0, 1000px) 1fr;
-    width: 100%;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-}
-
-.content {
-    grid-column: 2;
     display: flex;
+    max-width: 1100px;
+    margin: auto;
     flex-direction: column;
     padding: 1rem;
-    gap: 5rem;
+    gap: 3rem;
 }
 
-.scrollbar-wrapper {
-    grid-column: 3;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    height: 100vh;
-    position: sticky;
-}
+/*.content {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    padding: 1rem;*/
+/*    gap: 3rem;*/
+/*}*/
+
+/*.scrollbar-wrapper {*/
+/*    grid-column: 3;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: flex-start;*/
+/*    height: 100vh;*/
+/*    position: sticky;*/
+/*}*/
 
 @media (max-width: 1100px) {
-    main { grid-template-columns: auto 1fr; }
-    .scrollbar-wrapper { padding: 0 15px; }
+    /*main { grid-template-columns: auto 1fr; }*/
+    /*main { grid-template-columns: 1fr; }*/
+    /*.scrollbar-wrapper { padding: 0 15px; }*/
 }

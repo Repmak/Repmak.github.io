@@ -7,13 +7,11 @@ import CircularToggle from '../CircularToggle/CircularToggle';
 
 import LinkedInIcon from '../assets/linkedin-icon.svg';
 import GitHubIcon from '../assets/github-icon.svg';
-import DarkModeIcon from '../assets/dark-mode.svg';
+import DarkModeIcon1 from '../assets/dark-mode-1.svg';
 import DarkModeIcon2 from '../assets/dark-mode-2.svg';
 
 
-export default function Hero() {
-
-    const [darkMode, setDarkMode] = useState(false);
+export default function Hero({ darkMode, setDarkMode }) {
 
     return (
         <div className="hero-content">
@@ -23,13 +21,14 @@ export default function Hero() {
 
             <div className="widget-container widget-color-1 hero-buttons-container">
                 <button className="hero-button">
-                    <img src={LinkedInIcon} className=""/>
+                    <img src={LinkedInIcon}/>
                 </button>
                 <button className="hero-button">
-                    <img src={GitHubIcon} className=""/>
+                    <img src={GitHubIcon}/>
                 </button>
-                <button className="hero-button">
-                    <img src={DarkModeIcon2} className=""/>
+                <button className="hero-button" onClick={() => setDarkMode(prev => !prev)}>
+                    {/*<img src={darkMode ? DarkModeIcon1 : DarkModeIcon2} alt="Toggle Dark Mode"/>*/}
+                    <img src={DarkModeIcon1} alt="Toggle Dark Mode"/>
                 </button>
             </div>
         </div>
