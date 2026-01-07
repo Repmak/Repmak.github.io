@@ -7,7 +7,7 @@ import './Divider.css';
 export default function Divider({ text }) {
     return (
         <div className="hr-divider">
-            <span className="hr-text">{text}</span>
+            <h2 className="hr-text">{text}</h2>
         </div>
     );
 };

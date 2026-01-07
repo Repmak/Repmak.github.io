@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
 import '../TextStyles.css';
+import '../WidgetContainer.css';
 import './Project.css';
 
 import GitHubIcon from '../assets/github-icon.svg';
@@ -13,7 +14,7 @@ export default function Project({
     return (
         <div
             // className={`widget-container ${colorClass} ${sizeClass}`}
-            className='widget-container'
+            className='widget-container widget-liquid-glass'
             // className={`widget-container ${sizeClass}`}
         >
             <h1>{title}</h1>

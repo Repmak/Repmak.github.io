@@ -1,6 +1,11 @@
 
 :root {
-    --bg-color: rgb(34, 34, 34);
+    --white: rgb(255, 255, 255);
+    --black: rgb(34, 34, 34);
+    --accent-color-1: #ea184f;
+    --accent-color-2: #ea184f;
+
+    --bg-color: var(--black);
     --primary-values: 235, 240, 256;
     --secondary-values: 201, 24, 74;
     --tertiary-values: 150, 220, 255;
@@ -13,12 +18,14 @@
     --container-glow-border: rgba(var(--primary-values), 0.15);
     --container-glow-hover: rgba(var(--secondary-values), 0.2);
 
-    --h1-text-color: rgb(255, 255, 255);
+    --h1-text-color: var(--white);
     --h2-text-color: rgb(228, 228, 228);
     --p-text-color: rgb(228, 228, 228);
 
     --project-footer-bubble-color: rgb(228, 228, 228);
     --project-footer-text-color: rgb(34, 34, 34);
+
+    --widget-container-spacing: 1.5rem;
 }
 
 html, body { margin: 0; padding: 0; background: var(--bg-color); font-optical-sizing: auto; }
@@ -53,31 +60,3 @@ main {
     main { grid-template-columns: auto 1fr; }
     .scrollbar-wrapper { padding: 0 15px; }
 }
-
-.widget-container {
-    padding: 0.75rem 0.75rem 0.75rem 0.75rem;
-    justify-content: center;
-    border-radius: 30px;
-    overflow: hidden;
-    transition-duration: 0.3s;
-
-    /* Liquid glass effect.*/
-    background: rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(150px);
-    -webkit-backdrop-filter: blur(15px);
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
-}
-
-.widget-container:hover {
-    box-shadow: 0 2px 40px 0 rgba(255, 255, 255, 0.1);
-}
-
-/*.widget-color-1 { background-color: #c9184a; color: #dee2e6; }*/
-/*.widget-color-2 { background-color: #c0d820; color: #222222; }*/
-/*.widget-color-3 { background-color: #2a9d8f; color: #dee2e6; }*/
-/*.widget-color-4 { background-color: #53068c; color: #8ec9d6; }*/
-.widget-color-1 { background-color: #615f5d; color: #ffffff; }
-.widget-color-2 { background-color: #4c4444; color: #ffffff; }
-.widget-color-3 { background-color: #302e2c; color: #dee2e6; }
-.widget-color-4 { background-color: #2b333a; color: #ffffff; }

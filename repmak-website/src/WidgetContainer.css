@@ -1,0 +1,32 @@
+
+.widget-container {
+    padding: 0.5rem;
+    justify-content: center;
+    border-radius: 20px;
+    overflow: hidden;
+    transition-duration: 0.3s;
+}
+
+.widget-container:hover {
+    box-shadow: 0 2px 40px 0 rgba(255, 255, 255, 0.1);
+}
+
+.widget-color-1 { background-color: var(--accent-color-1); color: var(--white); }
+.widget-color-2 { background-color: #c0d820; color: var(--black); }
+.widget-color-3 { background-color: #2a9d8f; color: var(--white); }
+.widget-color-4 { background-color: #53068c; color: #8ec9d6; }
+
+/*.widget-color-1 { background-color: #c9184a; color: var(--white); }*/
+/*.widget-color-2 { background-color: #c0d820; color: var(--black); }*/
+/*.widget-color-3 { background-color: #2a9d8f; color: var(--white); }*/
+/*.widget-color-4 { background-color: #53068c; color: #8ec9d6; }*/
+
+
+.widget-liquid-glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(150px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+
+}

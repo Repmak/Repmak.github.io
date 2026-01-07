@@ -9,14 +9,11 @@
 .hr-divider::before, .hr-divider::after {
     content: "";
     flex: 1;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid var(--accent-color-1);
 }
 
 .hr-text {
-    padding: 10px 20px;
-    border: 2px solid #333;
+    padding: 0.25rem 1rem;
     border-radius: 999px;
-    background-color: #f9f9f9;
-    font-weight: bold;
-    font-size: 14px;
+    background-color: var(--accent-color-1);
 }

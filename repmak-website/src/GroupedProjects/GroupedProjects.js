@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
 import '../TextStyles.css';
+import '../WidgetContainer.css';
 import './GroupedProjects.css';
 import Divider from "../Divider/Divider";
 import Project from "../Project/Project";
