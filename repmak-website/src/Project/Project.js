@@ -12,8 +12,8 @@ export default function Project({
 }) {
     return (
         <div
-            className={`widget-container ${colorClass} ${sizeClass}`}
-            // className='widget-container'
+            // className={`widget-container ${colorClass} ${sizeClass}`}
+            className='widget-container'
             // className={`widget-container ${sizeClass}`}
         >
             <h1>{title}</h1>

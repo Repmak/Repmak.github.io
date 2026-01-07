@@ -4,7 +4,6 @@
     align-items: center;
     text-align: center;
     width: 100%;
-    margin: 20px 0;
 }
 
 .hr-divider::before, .hr-divider::after {
@@ -15,7 +14,6 @@
 
 .hr-text {
     padding: 10px 20px;
-    margin: 0 10px;
     border: 2px solid #333;
     border-radius: 999px;
     background-color: #f9f9f9;

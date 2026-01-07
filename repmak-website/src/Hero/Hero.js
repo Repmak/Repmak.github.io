@@ -16,23 +16,23 @@ export default function Hero() {
         >
             <div className="hero-content">
                 <h1>Justin Kamper</h1>
-                <div>
-                    <CircularToggle
-                        alt={"Dark mode"}
-                        image={DarkModeIcon}
-                        setState={setDarkMode}
-                    />
-                    <CircularToggle
-                        alt={"Dark mode"}
-                        image={DarkModeIcon}
-                        setState={setDarkMode}
-                    />
-                    <CircularToggle
-                        alt={"Dark mode"}
-                        image={DarkModeIcon}
-                        setState={setDarkMode}
-                    />
-                </div>
+                {/*<div>*/}
+                {/*    <CircularToggle*/}
+                {/*        alt={"Dark mode"}*/}
+                {/*        image={DarkModeIcon}*/}
+                {/*        setState={setDarkMode}*/}
+                {/*    />*/}
+                {/*    <CircularToggle*/}
+                {/*        alt={"Dark mode"}*/}
+                {/*        image={DarkModeIcon}*/}
+                {/*        setState={setDarkMode}*/}
+                {/*    />*/}
+                {/*    <CircularToggle*/}
+                {/*        alt={"Dark mode"}*/}
+                {/*        image={DarkModeIcon}*/}
+                {/*        setState={setDarkMode}*/}
+                {/*    />*/}
+                {/*</div>*/}
             </div>
         </div>
     );
