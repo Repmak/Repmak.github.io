@@ -18,7 +18,8 @@ export default function ProjectWidget1({
     sizing="",
     color="",
 }) {
-    const classNames = `widget ${sizing} ${color} tech-stack-${color}`;
+    const classNamesOuter = `widget-container ${sizing}`;
+    const classNamesInner = `widget ${color}`;
 
     const inner = (
         <>
@@ -45,14 +46,16 @@ export default function ProjectWidget1({
     );
 
     return (
-        publicRepo ? (
-            <a className={classNames} href={repo} target="_blank" rel="noopener noreferrer">
-                {inner}
-            </a>
-        ) : (
-            <div className={classNames}>
-                {inner}
-            </div>
-        )
+        <div className={classNamesOuter}>
+            {publicRepo ? (
+                <a className={classNamesInner} href={repo} target="_blank" rel="noopener noreferrer">
+                    {inner}
+                </a>
+            ) : (
+                <div className={classNamesInner}>
+                    {inner}
+                </div>
+            )}
+        </div>
     );
 }

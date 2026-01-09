@@ -11,12 +11,15 @@ export default function Widget({
     positioning="centered",  // Centered content.
     color="liquid-glass",  // Liquid glass colors.
 }) {
-    const classNames = `widget ${sizing} ${positioning} ${color}`;
+    const classNamesOuter = `widget-container ${sizing}`;
+    const classNamesInner = `widget ${positioning} ${color}`;
 
     return (
-        <div className={classNames}>
-            <h1>{header}</h1>
-            <p>{content}</p>
+        <div className={classNamesOuter}>
+            <div className={classNamesInner}>
+                <h1>{header}</h1>
+                <p>{content}</p>
+            </div>
         </div>
     );
 }
