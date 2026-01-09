@@ -1,11 +1,18 @@
 
+* { box-sizing: border-box; }
+a { text-decoration: none; }
+
 .widget {
     display: flex;
+    flex-direction: column;
     aspect-ratio: 1 / 1;
     border-radius: 30px;
-    gap: 1.5rem;
     padding: 1.5rem;
     transition-duration: 0.3s;
+
+    min-height: 0;
+    min-width: 0;
+    overflow: hidden;
 }
 
 .widget:hover {
@@ -15,23 +22,32 @@
 
 /* Sizing */
 
-.widget.wide { grid-column: span 2; aspect-ratio: auto; }
-.widget.tall { grid-row: span 2; aspect-ratio: auto; }
-.widget.big { grid-column: span 2; grid-row: span 2; }
+.widget.wide { grid-column: span 2; aspect-ratio: 2 / 1; }
+.widget.extra-wide { grid-column: span 3; aspect-ratio: 3 / 1; }
+.widget.tall { grid-row: span 2; aspect-ratio: 1 / 2; }
+.widget.big { grid-column: span 2; grid-row: span 2; aspect-ratio: 1 / 1; }
+
+@media (max-width: 800px) {
+    .widget.extra-wide { grid-column: span 2; aspect-ratio: 2 / 1; }
+}
+
+/*.widget.wide { grid-column: span 2; aspect-ratio: auto; }*/
+/*.widget.tall { grid-row: span 2; aspect-ratio: auto; }*/
+/*.widget.big { grid-column: span 2; grid-row: span 2; }*/
 
 
 /* Content positioning */
+/* Note: Classes for projects and buttons are located in their own folders. */
 
 .widget.centered {
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    text-align: center;
 }
 
-.widget.quadrants {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+.widget.bottom-left {
+    justify-content: flex-end;
+    align-items: flex-start;
 }
 
 
@@ -43,7 +59,11 @@
 }
 
 .widget.color-set-2 {
-    /*background: rgb(189, 13, 102);*/
+    background: var(--accent-color-2);
+    color: var(--black);
+}
+
+.widget.color-set-3 {
     background: var(--black);
     color: var(--white);
 }

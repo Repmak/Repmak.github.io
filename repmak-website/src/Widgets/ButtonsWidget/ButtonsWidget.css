@@ -1,4 +1,11 @@
 
+.widget.quadrants {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.5rem;
+}
+
 .quadrant-button {
     display: flex;
     align-items: center;
@@ -7,21 +14,35 @@
     border-radius: 999px;
     cursor: pointer;
     transition-duration: 0.3s;
-    background-color: var(--bg-color);
-    border: 2px solid var(--accent-color-1);
+    background-color: var(--accent-color-1);
+    border: none;
+}
+
+.tall-quadrant-button {
+    grid-column: 2;
+    grid-row: 1 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tall-quadrant-button .quadrant-button {
+    width: 100%;
+    aspect-ratio: 1 / 1;
 }
 
 .quadrant-button:hover {
     background-color: var(--black);
 }
 
-.quadrant-button img {
+.quadrant-button .icon {
     width: 2.5rem;
     height: 2.5rem;
     display: block;
     transition-duration: 0.6s;
+    filter: invert(0);
 }
 
-.quadrant-button:hover img {
+.quadrant-button:hover .icon {
     filter: invert(1);
 }

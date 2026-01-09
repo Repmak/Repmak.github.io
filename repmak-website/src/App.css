@@ -1,14 +1,13 @@
 
 :root {
-    --bg-color: rgb(236, 231, 231);
+    --bg-color: rgb(239, 234, 234);
     --white: rgb(255, 255, 255);
     --black: rgb(34, 34, 34);
-    --accent-color-1: rgb(236, 189, 7);
-    --accent-color-2: #ea184f;
 
-    --container-glow: rgba(235, 240, 256, 0.15);
-    --container-glow-border: rgba(201, 24, 74, 0.15);
-    --container-glow-hover: rgba(150, 220, 255, 0.2);
+    --accent-color-1: rgb(133, 202, 244);
+    --accent-color-2: rgb(220, 202, 22);
+    --accent-color-3: rgb(228, 81, 0);
+    --accent-color-4: rgb(67, 41, 4);
 }
 
 html, body { margin: 0; padding: 0; background: var(--bg-color); font-optical-sizing: auto; }

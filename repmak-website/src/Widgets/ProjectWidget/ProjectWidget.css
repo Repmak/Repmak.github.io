@@ -1,0 +1,47 @@
+
+
+.project-header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.project-header .icon {
+    display: inline-block;
+    width: 2rem;
+    height: auto;
+}
+
+.widget.project-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.tech-stack-container {
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+}
+
+.tech-stack-bubble {
+    padding: 0.15rem 0.5rem;
+    border-radius: 999px;
+    text-wrap: nowrap;
+}
+
+.tech-stack-color-set-1 {
+    background: var(--bg-color);
+    color: var(--black);
+}
+
+.tech-stack-color-set-2 {
+    background: var(--bg-color);
+    color: var(--black);
+}
+
+.tech-stack-color-set-3 {
+    background: var(--bg-color);
+    color: var(--black);
+}

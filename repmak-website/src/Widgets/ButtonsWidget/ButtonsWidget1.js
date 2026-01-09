@@ -5,13 +5,13 @@ import '../Widget.css';
 import './ButtonsWidget.css';
 import './BrightnessSlider.css';
 
-import LinkedInIcon from '../../assets/linkedin-icon.svg';
-import GitHubIcon from '../../assets/github-icon.svg';
-import DarkModeIcon from '../../assets/dark-mode-icon.svg';
-import BrightnessIcon from "./BrightnessIcon";
+import { ReactComponent as LinkedInIcon } from '../../assets/linkedin-icon.svg';
+import { ReactComponent as GitHubIcon } from '../../assets/github-icon.svg';
+import { ReactComponent as BrightnessIcon } from '../../assets/dark-mode-icon.svg';
+// import BrightnessIcon from "./BrightnessIcon";
 
 
-export default function ButtonsWidget({ brightness, setBrightness }) {
+export default function ButtonsWidget1({ brightness, setBrightness }) {
 
     const sliderRef = useRef(null);
     const [level, setLevel] = useState(0.25);
@@ -71,10 +71,12 @@ export default function ButtonsWidget({ brightness, setBrightness }) {
     return (
         <div className="widget quadrants liquid-glass">
             <a className="quadrant-button" href="https://www.linkedin.com/in/justin-kamper/" target="_blank" rel="noopener noreferrer">
-                <img src={LinkedInIcon} alt="LinkedIn"/>
+                {/*<img src={LinkedInIcon} alt="LinkedIn"/>*/}
+                <LinkedInIcon className="icon" alt="LinkedIn" />
             </a>
             <a className="quadrant-button" href="https://github.com/Repmak" target="_blank" rel="noopener noreferrer">
-                <img src={GitHubIcon} alt="GitHub"/>
+                {/*<img src={GitHubIcon} alt="GitHub"/>*/}
+                <GitHubIcon className="icon" alt="GitHub" />
             </a>
 
             <div
