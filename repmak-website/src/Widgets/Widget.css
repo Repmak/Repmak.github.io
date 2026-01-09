@@ -1,0 +1,57 @@
+
+.widget {
+    display: flex;
+    aspect-ratio: 1 / 1;
+    border-radius: 30px;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    transition-duration: 0.3s;
+}
+
+.widget:hover {
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+}
+
+
+/* Sizing */
+
+.widget.wide { grid-column: span 2; aspect-ratio: auto; }
+.widget.tall { grid-row: span 2; aspect-ratio: auto; }
+.widget.big { grid-column: span 2; grid-row: span 2; }
+
+
+/* Content positioning */
+
+.widget.centered {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.widget.quadrants {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+
+/* Color sets */
+
+.widget.color-set-1 {
+    background: var(--accent-color-1);
+    color: var(--black);
+}
+
+.widget.color-set-2 {
+    /*background: rgb(189, 13, 102);*/
+    background: var(--black);
+    color: var(--white);
+}
+
+.widget.liquid-glass {
+    background: rgba(255, 255, 255, 0.3);
+    color: var(--black);
+    backdrop-filter: blur(25px) saturate(180%);
+    -webkit-backdrop-filter: blur(25px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 1);
+}

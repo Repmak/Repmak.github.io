@@ -1,0 +1,27 @@
+
+.quadrant-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    aspect-ratio: 1 / 1;
+    border-radius: 999px;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    background-color: var(--bg-color);
+    border: 2px solid var(--accent-color-1);
+}
+
+.quadrant-button:hover {
+    background-color: var(--black);
+}
+
+.quadrant-button img {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: block;
+    transition-duration: 0.6s;
+}
+
+.quadrant-button:hover img {
+    filter: invert(1);
+}
