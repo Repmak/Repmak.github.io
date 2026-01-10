@@ -5,7 +5,6 @@ import {projects} from './projects-data';
 import Widget from './Widgets/Widget';
 import ProjectWidgetDescr from './Widgets/ProjectWidget/ProjectWidgetDescr';
 import ProjectWidgetImg from './Widgets/ProjectWidget/ProjectWidgetImg';
-import ProjectWidgetDescrImg from './Widgets/ProjectWidget/ProjectWidgetDescrImg';
 import BackgroundGradient from './BackgroundGradient/BackgroundGradient';
 import ButtonWidget from './Widgets/ButtonWidget/ButtonWidget';
 
@@ -36,16 +35,18 @@ export default function App() {
                         {/*header={"Justin Kamper"} content={"I enjoy tackling meaningful problems through forward-thinking software design."} />*/}
 
                 <ButtonWidget icon={LinkedInIcon} link={"https://www.linkedin.com/in/justin-kamper/"} alt={"LinkedIn"}/>
-
                 <ButtonWidget icon={GitHubIcon} link={"https://github.com/Repmak"} alt={"GitHub"}/>
 
-                {/*<Widget sizing={"tall"} positioning={"bottom-left"} color={"color-set-2"}*/}
-                {/*        header={""} content={""} />*/}
-
                 {projects.map((project, index) => (
-                    <ProjectWidgetDescr key={index} sizing={project.sizing} positioning={project.positioning} color={project.color}
+                    project.image ? (
+                        <ProjectWidgetImg key={index} sizing={project.sizing} positioning={project.positioning} color={project.color}
+                                        title={project.title} dates={project.dates} description={project.description} image={project.image}
+                                        techStack={project.techStack} repo={project.repo} publicRepo={project.publicRepo}/>
+                    ) : (
+                        <ProjectWidgetDescr key={index} sizing={project.sizing} positioning={project.positioning} color={project.color}
                                         title={project.title} dates={project.dates} description={project.description}
                                         techStack={project.techStack} repo={project.repo} publicRepo={project.publicRepo}/>
+                    )
                 ))}
             </main>
         </BackgroundGradient>

@@ -7,7 +7,7 @@ import ExternalLinkIcon from "../../assets/ExternalLinkIcon";
 
 
 export default function ProjectWidget({
-    title, dates, img, techStack, repo, publicRepo,
+    title, dates, description, image, techStack, repo, publicRepo,
     sizing="",
     color="",
 }) {
@@ -28,7 +28,11 @@ export default function ProjectWidget({
 
                 <h2>{dates}</h2>
 
-                <img src={img} />
+                {description && (
+                    <p>{description}</p>
+                )}
+
+                <img src={image} alt={"demo"}/>
 
                 <div className="tech-stack-container">
                     {techStack.map(text => (
