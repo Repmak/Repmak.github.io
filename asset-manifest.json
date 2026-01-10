@@ -1,20 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.cae7740d.css",
-    "main.js": "/static/js/main.e2596e30.js",
+    "main.css": "/static/css/main.8d9b5aaa.css",
+    "main.js": "/static/js/main.d2d1bd79.js",
     "static/js/453.3a2bc99d.chunk.js": "/static/js/453.3a2bc99d.chunk.js",
     "static/media/jolt.gif": "/static/media/jolt.6a436c32bfccb2ae4d94.gif",
     "static/media/auditorium booking system.gif": "/static/media/auditorium booking system.3d6e2e488ec47feb09d2.gif",
     "static/media/justintime.gif": "/static/media/justintime.47198e499b5ba35d594d.gif",
     "static/media/connect 4.gif": "/static/media/connect 4.8b7c49ee9e814696e7c1.gif",
-    "static/media/promptable traceback.png": "/static/media/promptable traceback.fa06d9f3cd62acbef9a8.png",
     "index.html": "/index.html",
-    "main.cae7740d.css.map": "/static/css/main.cae7740d.css.map",
-    "main.e2596e30.js.map": "/static/js/main.e2596e30.js.map",
+    "main.8d9b5aaa.css.map": "/static/css/main.8d9b5aaa.css.map",
+    "main.d2d1bd79.js.map": "/static/js/main.d2d1bd79.js.map",
     "453.3a2bc99d.chunk.js.map": "/static/js/453.3a2bc99d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cae7740d.css",
-    "static/js/main.e2596e30.js"
+    "static/css/main.8d9b5aaa.css",
+    "static/js/main.d2d1bd79.js"
   ]
 }
