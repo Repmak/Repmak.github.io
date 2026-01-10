@@ -11,8 +11,6 @@ import { ReactComponent as DarkModeIcon } from '../../assets/dark-mode-icon.svg'
 
 
 export default function ButtonsWidget2({ darkMode, setDarkMode }) {
-
-
     return (
         <div className="widget-container">
             <div className="widget quadrants liquid-glass">

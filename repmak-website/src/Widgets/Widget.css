@@ -5,11 +5,12 @@ a { text-decoration: none; }
 /* This is required to make gaps between widgets.
 We cannot use the gap property in main because it will affect the aspect ratio of widgets. */
 .widget-container {
-    padding: 0.75rem;
     aspect-ratio: 1 / 1;
 }
 
 .widget {
+    margin: 0.75rem;
+    gap: 0.5rem;
     display: flex;
     flex-direction: column;
     border-radius: 30px;
@@ -18,8 +19,8 @@ We cannot use the gap property in main because it will affect the aspect ratio o
     min-height: 0;
     min-width: 0;
     overflow: hidden;
-    width: 100%;
-    height: 100%;
+    width: calc(100% - 1.5rem);
+    height: calc(100% - 1.5rem);
 }
 
 .widget:hover {
@@ -38,55 +39,19 @@ We cannot use the gap property in main because it will affect the aspect ratio o
     .widget-container.extra-wide { grid-column: span 2; aspect-ratio: 2 / 1; }
 }
 
-/*.widget.wide { grid-column: span 2; }*/
-/*.widget.extra-wide { grid-column: span 3; }*/
-/*.widget.tall { grid-row: span 2; }*/
-/*.widget.big { grid-column: span 2; grid-row: span 2; }*/
-
-/*@media (max-width: 800px) {*/
-/*    main {*/
-/*        grid-template-columns: repeat(2, 1fr);*/
-/*        grid-auto-rows: calc((100cqw - (1 * 1rem)) / 2);*/
-/*    }*/
-/*    .widget.extra-wide { grid-column: span 2; }*/
-/*}*/
-
-/*.widget.wide { grid-column: span 2; aspect-ratio: auto; }*/
-/*.widget.tall { grid-row: span 2; aspect-ratio: auto; }*/
-/*.widget.big { grid-column: span 2; grid-row: span 2; }*/
-
 
 /* Content positioning */
 /* Note: Classes for projects and buttons are located in their own folders. */
 
-.widget.centered {
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.widget.bottom-left {
-    justify-content: flex-end;
-    align-items: flex-start;
-}
+.widget.centered { justify-content: center; text-align: center; }
+.widget.bottom-left { justify-content: flex-end; align-items: flex-start; }
 
 
 /* Color sets */
 
-.widget.color-set-1 {
-    background: var(--accent-color-1);
-    color: var(--black);
-}
-
-.widget.color-set-2 {
-    background: var(--accent-color-2);
-    color: var(--black);
-}
-
-.widget.color-set-3 {
-    background: var(--black);
-    color: var(--white);
-}
+.widget.color-set-1 { background: var(--accent-color-1); color: var(--black); }
+.widget.color-set-2 { background: var(--accent-color-2); color: var(--black); }
+.widget.color-set-3 { background: var(--black); color: var(--white); }
 
 .widget.liquid-glass {
     background: rgba(255, 255, 255, 0.3);
@@ -95,3 +60,5 @@ We cannot use the gap property in main because it will affect the aspect ratio o
     -webkit-backdrop-filter: blur(25px) saturate(180%);
     border: 1px solid rgba(255, 255, 255, 1);
 }
+
+.widget.liquid-glass:hover { border: none; }
