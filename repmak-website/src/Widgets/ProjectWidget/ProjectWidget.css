@@ -1,8 +1,4 @@
 
-.project-header { display: flex; justify-content: space-between; gap: 0.5rem; }
-.project-header a { color: inherit; text-decoration: none; }
-.project-external-link { width: 1.35rem; height: 1.35rem; }
-
 .tech-stack-container { display: flex; flex-direction: row; flex-wrap: wrap; gap: 0.3rem; }
 .tech-stack-bubble { padding: 0.15rem 0.5rem; border-radius: 999px; white-space: nowrap; }
 

@@ -17,14 +17,14 @@ export default function ProjectWidget({
     return (
         <div className={classNamesOuter}>
             <div className={classNamesInner}>
-                <div className="project-header">
-                    <h1>{title}</h1>
-                    {publicRepo && (
+                {publicRepo && (
+                    <div style={{position: 'relative'}}>
                         <a href={repo} target="_blank" rel="noopener noreferrer">
-                            <ExternalLinkIcon className="project-external-link" />
+                            <ExternalLinkIcon className="external-link-img" />
                         </a>
-                    )}
-                </div>
+                    </div>
+                )}
+                <h1>{title}</h1>
 
                 <h2>{dates}</h2>
 

@@ -5,12 +5,17 @@ import './ButtonWidget.css';
 import ExternalLinkIcon from '../../assets/ExternalLinkIcon'
 
 
-export default function ButtonWidget({ icon, link, alt }) {
+export default function ButtonWidget({ icon: Icon, link }) {
     return (
         <div className="widget-container">
-            <a className="widget liquid-glass external-link" href={link} target="_blank" rel="noopener noreferrer">
-                <ExternalLinkIcon className="top-right-external-link-img" />
-                <img src={icon} alt={alt} className="external-link-img" />
+            <a className="widget full-button liquid-glass" href={link} target="_blank" rel="noopener noreferrer">
+                <div style={{position: 'relative'}}>
+                    <ExternalLinkIcon className="external-link-img" />
+                </div>
+
+                <div className="social-media-platform-img">
+                    <Icon />
+                </div>
             </a>
         </div>
     );
