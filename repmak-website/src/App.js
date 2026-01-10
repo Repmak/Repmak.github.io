@@ -21,27 +21,27 @@ export default function App() {
     // }, [brightness]);
 
     return (
-        <BackgroundGradient>
-            <main>
-                <Widget sizing={"extra-wide"} positioning={"centered"} color={"color-set-1"}
-                        header={"Justin Kamper"} content={"Studying Computer Science in my penultimate year at the University of St Andrews, I enjoy tackling meaningful problems through forward-thinking software design."} />
-                        {/*header={"Justin Kamper"} content={"I enjoy tackling meaningful problems through forward-thinking software design."} />*/}
+        // <BackgroundGradient>
+        <main>
+            <Widget sizing={"extra-wide"} positioning={"centered"} color={"color-set-1"}
+                    header={"Justin Kamper"} content={"Studying Computer Science in my penultimate year at the University of St Andrews, I enjoy tackling meaningful problems through forward-thinking software design."} />
+                    {/*header={"Justin Kamper"} content={"I enjoy tackling meaningful problems through forward-thinking software design."} />*/}
 
-                <ButtonWidget icon={LinkedInIcon} link={"https://www.linkedin.com/in/justin-kamper/"} />
-                <ButtonWidget icon={GitHubIcon} link={"https://github.com/Repmak"} />
+            <ButtonWidget icon={LinkedInIcon} link={"https://www.linkedin.com/in/justin-kamper/"} />
+            <ButtonWidget icon={GitHubIcon} link={"https://github.com/Repmak"} />
 
-                {projects.map((project, index) => (
-                    project.image ? (
-                        <ProjectWidgetImg key={index} sizing={project.sizing} positioning={project.positioning} color={project.color}
-                                        title={project.title} dates={project.dates} description={project.description} image={project.image}
-                                        techStack={project.techStack} repo={project.repo} publicRepo={project.publicRepo}/>
-                    ) : (
-                        <ProjectWidget key={index} sizing={project.sizing} positioning={project.positioning} color={project.color}
-                                       title={project.title} dates={project.dates} description={project.description}
-                                       techStack={project.techStack} repo={project.repo} publicRepo={project.publicRepo}/>
-                    )
-                ))}
-            </main>
-        </BackgroundGradient>
+            {projects.map((project, index) => (
+                project.image ? (
+                    <ProjectWidgetImg key={index} sizing={project.sizing} positioning={project.positioning} color={project.color}
+                                    title={project.title} dates={project.dates} description={project.description} image={project.image}
+                                    techStack={project.techStack} repo={project.repo} publicRepo={project.publicRepo}/>
+                ) : (
+                    <ProjectWidget key={index} sizing={project.sizing} positioning={project.positioning} color={project.color}
+                                   title={project.title} dates={project.dates} description={project.description}
+                                   techStack={project.techStack} repo={project.repo} publicRepo={project.publicRepo}/>
+                )
+            ))}
+        </main>
+        // </BackgroundGradient>
     );
 }

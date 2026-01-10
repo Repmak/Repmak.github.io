@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import '../../App.css';
 import '../../Text.css';
 import '../Widget.css';
@@ -9,6 +9,7 @@ import ExternalLinkIcon from "../../assets/ExternalLinkIcon";
 export default function ProjectWidget({
     title, dates, description, techStack, repo, publicRepo,
     sizing="",
+    positioning="",
     color="",
 }) {
     const classNamesOuter = `widget-container ${sizing}`;
@@ -24,8 +25,8 @@ export default function ProjectWidget({
                         </a>
                     </div>
                 )}
-                <h1>{title}</h1>
 
+                <h1>{title}</h1>
                 <h2>{dates}</h2>
                 <p>{description}</p>
 

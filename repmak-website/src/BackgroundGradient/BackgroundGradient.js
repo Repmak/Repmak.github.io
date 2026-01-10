@@ -3,10 +3,14 @@ import React, { useMemo } from 'react';
 export default function BackgroundGradient({ children }) {
     const colors = [
         '#EFEAEAFF',  // Base color.
+        // 'rgba(9, 63, 85, 0.5)',
+        // 'rgba(67, 115, 135, 0.5)',
+        // 'rgba(59, 72, 78, 0.5)',
+        // 'rgba(121, 151, 165, 0.5)',
         'rgba(9, 63, 85, 0.5)',
-        'rgba(67, 115, 135, 0.5)',
-        'rgba(59, 72, 78, 0.5)',
-        'rgba(121, 151, 165, 0.5)',
+        'rgba(16,92,119,0.5)',
+        'rgba(60,21,3,0.3)',
+        'rgba(73,61,37,0.3)'
     ];
 
     const meshStyles = useMemo(() => {
