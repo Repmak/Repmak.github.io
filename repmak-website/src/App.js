@@ -235,7 +235,7 @@ const sections = [
 
                 <div className="project-content">
                     <div className="project-tagline">
-                        An auditorium booking system built with Flask, HTML, JavaScript, CSS, and an SQL database
+                        An auditorium booking system built with Flask, HTML, JavaScript, CSS, and a SQL database
                         featuring an intuitive interface for reserving seats to movies and plays.
                     </div>
                     <figure>
