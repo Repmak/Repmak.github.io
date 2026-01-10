@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.cae7740d.css",
-    "main.js": "/static/js/main.b33d8cc8.js",
+    "main.js": "/static/js/main.e2596e30.js",
     "static/js/453.3a2bc99d.chunk.js": "/static/js/453.3a2bc99d.chunk.js",
     "static/media/jolt.gif": "/static/media/jolt.6a436c32bfccb2ae4d94.gif",
     "static/media/auditorium booking system.gif": "/static/media/auditorium booking system.3d6e2e488ec47feb09d2.gif",
@@ -10,11 +10,11 @@
     "static/media/promptable traceback.png": "/static/media/promptable traceback.fa06d9f3cd62acbef9a8.png",
     "index.html": "/index.html",
     "main.cae7740d.css.map": "/static/css/main.cae7740d.css.map",
-    "main.b33d8cc8.js.map": "/static/js/main.b33d8cc8.js.map",
+    "main.e2596e30.js.map": "/static/js/main.e2596e30.js.map",
     "453.3a2bc99d.chunk.js.map": "/static/js/453.3a2bc99d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cae7740d.css",
-    "static/js/main.b33d8cc8.js"
+    "static/js/main.e2596e30.js"
   ]
 }
