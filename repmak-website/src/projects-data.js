@@ -52,7 +52,7 @@ export const projects = [
         // image: Jolt,
         description: "Chrome extension for personalised job matching and instant insights.",
         repo: "https://github.com/Repmak/Jolt",
-        publicRepo: false,
+        publicRepo: true,
         techStack: ["HTML", "JavaScript", "CSS"],
         sizing: 'wide',
         positioning: 'half-split-vertical',
