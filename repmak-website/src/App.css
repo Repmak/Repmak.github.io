@@ -17,8 +17,14 @@ main {
     margin: 0 auto;
     padding: 3rem 1rem 3rem 1rem;
     grid-template-columns: repeat(4, 1fr);
+    animation: slideIn 0.8s ease-out forwards;
 }
 
 @media (max-width: 800px) {
     main { grid-template-columns: repeat(2, 1fr); }
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
 }

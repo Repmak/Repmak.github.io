@@ -21,7 +21,6 @@ export default function App() {
     // }, [brightness]);
 
     return (
-        // <BackgroundGradient>
         <main>
             <Widget sizing={"extra-wide"} positioning={"centered"} color={"color-set-1"}
                     header={"Justin Kamper"} content={"Studying Computer Science in my penultimate year at the University of St Andrews, I enjoy tackling meaningful problems through forward-thinking software design."} />
@@ -41,6 +40,5 @@ export default function App() {
                 )
             ))}
         </main>
-        // </BackgroundGradient>
     );
 }
