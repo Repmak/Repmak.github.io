@@ -25,7 +25,6 @@ export default function App() {
         <main>
             <Widget sizing={"extra-wide"} positioning={"centered"} color={"color-set-1"}
                     header={"Justin Kamper"} content={"Studying Computer Science in my penultimate year at the University of St Andrews, I enjoy tackling meaningful problems through forward-thinking software design."} />
-                    {/*header={"Justin Kamper"} content={"I enjoy tackling meaningful problems through forward-thinking software design."} />*/}
 
             <ButtonWidget icon={LinkedInIcon} link={"https://www.linkedin.com/in/justin-kamper/"} />
             <ButtonWidget icon={GitHubIcon} link={"https://github.com/Repmak"} />
