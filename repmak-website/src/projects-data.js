@@ -10,11 +10,11 @@ import AuditoriumBookingSystem from './assets/auditorium booking system.gif';
 
 export const projects = [
     {
-        title: 'WordPiece Tokenizer',
+        title: 'WordPiece Encoder',
         dates: '01/2026 - Present',
         image: null,
-        description: "Currently developing a WordPiece tokenizer from scratch in C++. I plan to expand this project to seamlessly load and execute Hugging Face Transformers directly within C++ environments.",
-        repo: "https://github.com/Repmak/word-piece-tokenizer",
+        description: "Currently developing a WordPiece encoder from scratch in C++. I plan to expand this project to seamlessly load and execute Hugging Face Transformers directly within C++ environments.",
+        repo: "https://github.com/Repmak/word-piece-encoder",
         publicRepo: true,
         techStack: ["C++"],
         sizing: 'extra-wide',
