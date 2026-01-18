@@ -8,7 +8,7 @@ export default function App() {
         <Router>
             <Routes>
                 <Route path="/" element={<Portfolio />} />
-                <Route path="/sentencpp-docs" element={<SentenCPP />} />
+                <Route path="/sentencpp-docs/*" element={<SentenCPP />} />
             </Routes>
         </Router>
     );
