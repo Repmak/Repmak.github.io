@@ -3,28 +3,6 @@
     --bg-color: rgb(239, 234, 234);
     --white: rgb(255, 255, 255);
     --black: rgb(34, 34, 34);
-
-    --accent-color-1: rgb(133, 202, 244);
-    --accent-color-2: rgb(255, 133, 70);
-    /*--accent-color-2: rgb(241, 113, 50);*/
 }
 
 html, body { margin: 0; padding: 0; background: var(--bg-color); font-optical-sizing: auto; }
-
-main {
-    display: grid;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 3rem 1rem 3rem 1rem;
-    grid-template-columns: repeat(4, 1fr);
-    animation: slideIn 0.8s ease-out forwards;
-}
-
-@media (max-width: 800px) {
-    main { grid-template-columns: repeat(2, 1fr); }
-}
-
-@keyframes slideIn {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
-}

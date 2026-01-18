@@ -10,11 +10,11 @@ import AuditoriumBookingSystem from './assets/auditorium booking system.gif';
 
 export const projects = [
     {
-        title: 'WordPiece Encoder',
+        title: 'sentenCPP',
         dates: '01/2026 - Present',
         image: null,
-        description: "Currently developing a WordPiece encoder from scratch in C++. I plan to expand this project to seamlessly load and execute Hugging Face Transformers directly within C++ environments.",
-        repo: "https://github.com/Repmak/word-piece-encoder",
+        description: "sentenCPP is a C++20 library engineered for high-performance natural language processing. It bridges the gap between the ease of Python's sentence-transformers and the execution speed required for low-latency production systems.",
+        repo: "https://github.com/Repmak/SentenCPP",
         publicRepo: true,
         techStack: ["C++"],
         sizing: 'extra-wide',

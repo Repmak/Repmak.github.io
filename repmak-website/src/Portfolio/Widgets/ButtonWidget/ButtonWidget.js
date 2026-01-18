@@ -1,5 +1,4 @@
 import React from 'react';
-import '../../App.css';
 import '../Widget.css';
 import './ButtonWidget.css';
 import ExternalLinkIcon from '../../assets/ExternalLinkIcon'

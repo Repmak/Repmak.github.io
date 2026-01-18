@@ -1,13 +1,11 @@
 import React from 'react';
-import '../../App.css';
-import '../../Text.css';
 import '../Widget.css';
 import './ProjectWidget.css';
 import ExternalLinkIcon from "../../assets/ExternalLinkIcon";
 
 
 export default function ProjectWidget({
-    title, dates, description, image, techStack, repo, publicRepo,
+    title, dates, description, techStack, repo, publicRepo,
     sizing="",
     positioning="",
     color="",
@@ -28,13 +26,7 @@ export default function ProjectWidget({
 
                 <h1>{title}</h1>
                 <h2>{dates}</h2>
-
-                <div className={positioning}>
-                    <div>
-                        <p>{description}</p>
-                    </div>
-                    <img src={image} alt="demo" className="project-img" />
-                </div>
+                <p>{description}</p>
 
                 <div className="tech-stack-container">
                     {techStack.map(text => (
