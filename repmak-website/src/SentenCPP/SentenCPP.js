@@ -7,7 +7,7 @@ import SentenCPPLogo from './assets/sentencpp-logo.png';
 export default function SentenCPP() {
 
     useDocumentMetadata({
-        title: 'sentenCPP - Documentation',
+        title: 'sentenCPP - Docs',
         description: 'The official documentation for sentenCPP',
         favicon: null  // todo create a square logo
     });
