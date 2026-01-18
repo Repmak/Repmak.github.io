@@ -1,6 +1,6 @@
 import { HashRouter as Router, Routes, Route } from  'react-router-dom';
-import Portfolio from "./Portfolio/Portfolio";
-import sentenCPP from "./sentenCPP/sentenCPP";
+import Portfolio from './Portfolio/Portfolio';
+import SentenCPP from './SentenCPP/SentenCPP';
 import './App.css';
 
 export default function App() {
@@ -8,7 +8,7 @@ export default function App() {
         <Router>
             <Routes>
                 <Route path="/" element={<Portfolio />} />
-                <Route path="/sentencpp-docs" element={<sentenCPP />} />
+                <Route path="/sentencpp-docs" element={<SentenCPP />} />
             </Routes>
         </Router>
     );
