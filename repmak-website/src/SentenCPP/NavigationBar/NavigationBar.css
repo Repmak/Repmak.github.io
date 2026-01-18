@@ -22,7 +22,7 @@
 
 .docs-navigation-bar {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(5, 1fr);
     width: max-content;
     margin: 0 auto;
     padding: 1rem;
@@ -58,5 +58,5 @@
 }
 
 .navigation-bar-link:hover {
-    background-color: rgb(201, 206, 209);
+    background-color: var(--grey);
 }

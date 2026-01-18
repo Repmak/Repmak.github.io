@@ -21,6 +21,13 @@ export default function NavigationBar() {
             </NavLink>
 
             <NavLink
+                to="/sentencpp-docs/installation"
+                className="navigation-bar-link"
+            >
+                Installation Guide
+            </NavLink>
+
+            <NavLink
                 to="/sentencpp-docs/api-reference"
                 className="navigation-bar-link"
             >
