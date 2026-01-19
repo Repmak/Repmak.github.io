@@ -57,6 +57,10 @@
     border-right: none;
 }
 
+.navigation-bar-link-active {
+    background-color: var(--grey);
+}
+
 .navigation-bar-link:hover {
     background-color: var(--grey);
 }

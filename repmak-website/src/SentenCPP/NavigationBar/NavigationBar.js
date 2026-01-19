@@ -4,33 +4,25 @@ import './NavigationBar.css';
 
 
 export default function NavigationBar() {
+
+    const navLinkClass = ({ isActive }) =>
+        isActive ? "navigation-bar-link navigation-bar-link-active" : "navigation-bar-link";
+
     return (
         <div className="docs-navigation-bar">
-            <NavLink
-                to="/sentencpp-docs/overview"
-                className="navigation-bar-link"
-            >
+            <NavLink to="/sentencpp-docs/overview" className={navLinkClass}>
                 Overview
             </NavLink>
 
-            <NavLink
-                to="/sentencpp-docs/quick-start"
-                className="navigation-bar-link"
-            >
+            <NavLink to="/sentencpp-docs/quick-start" className={navLinkClass}>
                 Quick Start
             </NavLink>
 
-            <NavLink
-                to="/sentencpp-docs/installation"
-                className="navigation-bar-link"
-            >
+            <NavLink to="/sentencpp-docs/installation" className={navLinkClass}>
                 Installation Guide
             </NavLink>
 
-            <NavLink
-                to="/sentencpp-docs/api-reference"
-                className="navigation-bar-link"
-            >
+            <NavLink to="/sentencpp-docs/api-reference" className={navLinkClass}>
                 API Reference
             </NavLink>
 

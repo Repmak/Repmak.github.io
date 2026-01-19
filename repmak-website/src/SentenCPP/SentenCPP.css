@@ -27,24 +27,30 @@
 }
 
 .docs-header { font-family: "Inter", sans-serif; font-size: 1.5rem; font-weight: 500; }
-.docs-subheader { font-family: "Inter", sans-serif; font-size: 1.15rem; font-weight: 500; padding-top: 1rem; }
-.docs-p { font-family: "Inter", sans-serif; font-size: 1rem; font-weight: 300; padding: 0.5rem 0; }
+.indent .docs-header { font-size: 1.25rem; padding-top: 0.5rem; }
+.indent .indent .docs-header { font-size: 1.15rem; margin-left: 0.75rem; }
+.indent .indent .indent .docs-header { font-size: 1rem; margin-left: 1.5rem; }
 
-.indent .docs-header { padding-left: 0; }
-.indent .docs-subheader { padding-left: 0; }
-.indent .docs-p { padding-left: 0.5rem; }
-
-.indent .indent .docs-subheader { padding-left: 0.5rem; }
-.indent .indent .docs-p { padding-left: 1rem; }
+.docs-p { font-family: "Inter", sans-serif; font-size: 1rem; font-weight: 300; margin-top: 0.5rem; }
+.indent .docs-p { margin-left: 0.75rem; }
+.indent .indent .docs-p { margin-left: 1.5rem; }
+.indent .indent .indent .docs-p { margin-left: 2.25rem; }
 
 .docs-p b { font-weight: 500; }
 
 .docs-header .code-quote { padding: 0 0.25rem; background-color: var(--grey); border-radius: 6px; font-family: "JetBrains Mono", sans-serif; font-weight: 400; }
 .docs-subheader .code-quote { padding: 0 0.25rem; background-color: var(--grey); border-radius: 6px; font-family: "JetBrains Mono", sans-serif; font-weight: 400; }
-.docs-p .code-quote { padding: 0 0.25rem; background-color: var(--grey); border-radius: 6px; font-family: "JetBrains Mono", sans-serif; font-weight: 400; }
+
+code { padding: 0 0.25rem; background-color: var(--grey); border-radius: 6px; font-family: "JetBrains Mono", sans-serif; font-weight: 400; }
 
 .docs-p .external-link { text-decoration: underline; }
 
 .docs-p ul { margin: 0.5rem 0 0 0; }
 .docs-p ul li { padding-bottom: 0.35rem; }
 .docs-p ul li:last-child { padding-bottom: 0; }
+
+.docs-img {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
