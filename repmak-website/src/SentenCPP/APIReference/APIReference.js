@@ -5,58 +5,123 @@ import './APIReference.css';
 
 export default function APIReference() {
     return (
-        <div>
+        <>
+            <div className="docs-p">
+                <b>sentenCPP</b> is organised into three primary namespaces to handle the following distinct stages:
+                <ul>
+                    <li>Tokenizer</li>
+                    <li>Inference</li>
+                    <li>Embedding Utils</li>
+                </ul>
+            </div>
 
+            <div className="indent">
+                <div className="docs-header">
+                    1. Tokenizer - <span className="code-quote">sentencpp::tokenizer</span>
+                </div>
+                <div className="docs-p">
+                    This handles the conversion of raw strings into sequences of tokens compatible with transformer models.
+                </div>
 
-            ## 4. API Reference
-            sentenCPP is organised into three primary namespaces to handle the following distinct stages:
-            - [**4.1 Tokenizer**](#41-sentencpptokenizer)
-            - [**4.2 Inference**](#42-sentencppinference)
-            - [**4.3 Embedding Utils**](#43-sentencppembedding_utils)
+                <div className="indent">
+                    <div className="docs-subheader">
+                        1.1 class <span className="code-quote">TokenizerInterface</span>
+                    </div>
+                    <div className="docs-p">
+                        This is an abstract class for all tokenization algorithms.
+                    </div>
+                    <div className="docs-p">
+                        Methods:
+                        <ul>
+                            <li><span className="code-quote">tokenize</span></li>
+                            <li><span className="code-quote">get_vocab_size</span></li>
+                        </ul>
+                    </div>
+                </div>
 
-            ### 4.1 `sentencpp::tokenizer`
-            This handles the conversion of raw strings into sequences of tokens compatible with transformer models.
+                <div className="indent">
+                    <div className="docs-subheader indent-1">
+                        1.2 struct <span className="code-quote">TokenizerBaseConfig</span>
+                    </div>
+                    <div className="docs-p indent-2">
+                        Universal configuration settings shared by all subclasses of <span className="code-quote">TokenizerInterface</span>.
+                    </div>
+                    <div className="docs-p indent-2">
+                        Members:
+                        <ul>
+                            <li><span className="code-quote">max_input_chars_per_word</span></li>
+                            <li><span className="code-quote">max_length</span></li>
+                            <li><span className="code-quote">to_lowercase</span></li>
+                            <li><span className="code-quote">strip_accents</span></li>
+                            <li><span className="code-quote">clean_text</span></li>
+                            <li><span className="code-quote">handle_chinese_chars</span></li>
+                            <li><span className="code-quote">padding_token</span></li>
+                            <li><span className="code-quote">unknown_token</span></li>
+                            <li><span className="code-quote">classification_token</span></li>
+                            <li><span className="code-quote">separator_token</span></li>
+                            <li><span className="code-quote">mask_token</span></li>
+                        </ul>
+                    </div>
+                </div>
 
-            #### 4.1.1 `class WordPiece`
-            This is a subclass of `TokenizerInterface`. This class performs WordPiece tokenization.
+                <div className="indent">
+                    <div className="docs-subheader">
+                        1.3 class <span className="code-quote">WordPiece</span>
+                    </div>
+                    <div className="docs-p">
+                        An implementation of the WordPiece algorithm which inherits from <span className="code-quote">TokenizerInterface</span>. It breaks words into tokens using a max match approach.
+                    </div>
+                    <div className="docs-p">
+                        Methods:
+                        <ul>
+                            <li><span className="code-quote">tokenize</span></li>
+                            <li><span className="code-quote">get_vocab_size</span></li>
+                        </ul>
+                    </div>
+                </div>
 
-            **`WordPiece(const WordPieceConfig& config)`**: Initialises the tokenizer using [4.1.2 WordPieceConfig](#412-struct-wordpiececonfig).
+                <div className="indent">
+                    <div className="docs-subheader">
+                        1.4 struct <span className="code-quote">WordPieceConfig</span>
+                    </div>
+                    <div className="docs-p">
+                        Specific parameters for initialising <span className="code-quote">WordPiece</span>. This struct inherits all members from <span className="code-quote">TokenizerBaseConfig</span>.
+                    </div>
+                    <div className="docs-p">
+                        Members:
+                        <ul>
+                            <li><span className="code-quote">config_path</span></li>
+                            <li><span className="code-quote">vocab_key</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
-            **`std::vector tokenize(const std::string& text)`**: Normalises the string, converts it into a vector of tokens, and post-processes it.
+            <div className="indent">
+                <div className="docs-header">
+                    2. Inference - <span className="code-quote">sentencpp::inference</span>
+                </div>
+                <div className="docs-p">
+                    This namespace performs the execution of ONNX models through <a className="external-link" href="https://onnxruntime.ai/" target="_blank" rel="noopener noreferrer">ONNX Runtime</a>.
+                </div>
 
-            #### 4.1.2 `struct WordPieceConfig`
-            This is a sub-struct of `TokenizerBaseConfig`. The members of this struct determine the behaviour and operations of the WordPiece tokenizer.
+                <div className="indent">
 
-            **`std::size_t max_input_chars_per_word = 100`**: This value should match your selected model's configuration settings. Sets a limit on the number of characters of a word. A word with length exceeding this limit will automatically be represented as an `UNK` token.
+                </div>
+            </div>
 
-            **`std::size_t max_length = 128`**: This value should match your selected model's configuration settings. Sets a limit on the number of tokens for a sequence. Tokens beyond this limit will be truncated. Note that 2 indices are reserved for special tokens; index 0 stores a `CLS` token, adn index 127 stores a `SEP` token.
+            <div className="indent">
+                <div className="docs-header">
+                    3. Embedding Utilities - <span className="code-quote">sentencpp::embedding_utils</span>
+                </div>
+                <div className="docs-p">
+                    Contains static methods for mathematical operations on vectors.
+                </div>
 
-            **`bool to_lowercase = true`**: This value should match your selected model's configuration settings.
+                <div className="indent">
 
-            **`bool strip_accents = true`**: This value should match your selected model's configuration settings.
-
-            **`bool clean_text = true`**: This value should match your selected model's configuration settings.
-
-            **`bool handle_chinese_chars = true`**: This value should match your selected model's configuration settings.
-
-            **`std::string padding_token = "[PAD]"`**: This value should match your selected model's special token vocabulary.
-
-            **`std::string unknown_token = "[UNK]"`**: This value should match your selected model's special token vocabulary.
-
-            **`std::string classification_token = "[CLS]"`**: This value should match your selected model's special token vocabulary.
-
-            **`std::string separator_token = "[SEP]"`**: This value should match your selected model's special token vocabulary.
-
-            **`std::string mask_token = "[MASK]"`**: This value should match your selected model's special token vocabulary.
-
-            ### 4.2 `sentencpp::inference`
-            This namespace performs the execution of ONNX models through ONNX Runtime.
-
-
-            ### 4.3 `sentencpp::embedding_utils`
-            Contains static methods for mathematical operations on vectors.
-
-
-        </div>
+                </div>
+            </div>
+        </>
     );
 }
