@@ -1,8 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import './Overview.css';
-// import SentenCPPLogo from '../assets/sentencpp-logo.png';
-// import SentenCPPLogo from '../assets/sentenCPPLogo1.png';
-import SentenCPPLogo from '../assets/sentenCPPLogo2.png';
+import SentenCPPLogo from '../assets/sentenCPPLogo.png';
 
 export default function Overview() {
     return (
@@ -18,7 +16,7 @@ export default function Overview() {
             <div className="indent">
                 <div className="docs-header">Why?</div>
                 <div className="docs-p">
-                    While NLP in C++ is entirely possible using various high-performance tools, the process of manually stitching these libraries together is often time-consuming and complex. <b>sentenCPP</b> is not intended to replace hyper-specialised libraries. It aims to eliminate the friction inherent to C++ development.
+                    While NLP in C++ is entirely possible using various high-performance tools, the process of manually integrating these libraries together is often time-consuming and complex. <b>sentenCPP</b> aims to eliminate the friction inherent to this workflow. However, it is not intended to replace hyper-specialised libraries.
                 </div>
             </div>
 
@@ -32,12 +30,12 @@ export default function Overview() {
                         <li>Native Performance: Run inference directly in your C++ application, eliminating the memory and latency overhead of the Python interpreter.</li>
                     </ul>
                 </div>
-                <div className="docs-p">
-                    Show below are equivalent Python and C++ snippets of code.
-                </div>
-                <div className="docs-p">
-                    todo put image here
-                </div>
+                {/*<div className="docs-p">*/}
+                {/*    Here is a snippet */}
+                {/*</div>*/}
+                {/*<div className="docs-p">*/}
+                {/*    todo put image here*/}
+                {/*</div>*/}
             </div>
 
             <div className="indent">

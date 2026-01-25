@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import {Routes, Route, NavLink, Navigate} from 'react-router-dom';
+import {Routes, Route, NavLink, Navigate, useLocation} from 'react-router-dom';
 import './SentenCPP.css';
 import {useDocumentMetadata} from './useDocumentMetadata.js';
 import NavigationBar from "./NavigationBar/NavigationBar";
@@ -7,14 +7,25 @@ import Overview from "./Overview/Overview";
 import QuickStart from "./QuickStart/QuickStart";
 import Installation from "./Installation/Installation";
 import APIReference from "./APIReference/APIReference";
+import Icon from './assets/logo.png';
 
 
 export default function SentenCPP() {
 
+    const { hash } = useLocation();
+    useEffect(() => {
+        if (hash) {
+            const element = document.getElementById(hash.replace('#', ''));
+            if (element) {
+                element.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    }, [hash]);
+
     useDocumentMetadata({
         title: 'sentenCPP - Docs',
         description: 'The official documentation for sentenCPP',
-        favicon: null  // todo create a square logo
+        favicon: Icon
     });
 
     return (

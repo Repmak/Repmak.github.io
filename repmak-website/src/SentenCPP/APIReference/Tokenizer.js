@@ -1,4 +1,3 @@
-
 import React, {useEffect, useState} from 'react';
 import './APIReference.css';
 import DocsTable from "./DocsTable";
@@ -12,7 +11,9 @@ export default function Tokenizer() {
 
             <div className="indent">
                 <div className="docs-header">1.1 Class <code>VocabList</code></div>
-                <div className="docs-p">Manages the bidirectional mapping between string tokens and unique integer IDs, including support for special token roles.</div>
+                <div className="docs-p">
+                    Manages the bidirectional mapping between string tokens and unique integer IDs, including support for special token roles. This class is instantiated and owned by subclasses of <code>TokenizerInterface</code>, and so is never directly interacted with through the main program.
+                </div>
 
                 <div className="indent">
                     <div className="docs-header">1.1.1 Enum <code>TokenRole</code></div>
@@ -30,17 +31,16 @@ export default function Tokenizer() {
                         />
                     </div>
 
-                    <div className="docs-header">1.1.2 Constructor</div>
+                    <div className="docs-header">1.1.2 Constructor <code>VocabList() = default;</code></div>
                     <div className="docs-p">
-                        <code>VocabList() = default;</code>
-                        <br />
                         Initialises an empty vocabulary container.
                     </div>
 
                     <div className="docs-header">1.1.3 Attributes</div>
                     <div className="docs-p">
+                        
                         <DocsTable
-                            header={["Attribute", "Access Specifier", "Type", "Description"]}
+                            header={["Attribute", "Access", "Type", "Description"]}
                             rows={[
                                 ["string_to_id_map_", "Private", "std::unordered_map<std::string, int64_t>", "Maps string tokens to their integer IDs."],
                                 ["id_to_string_map_", "Private", "std::vector<std::string>", "Maps integer IDs back to string tokens using vector indexing."],
@@ -49,13 +49,28 @@ export default function Tokenizer() {
                         />
                     </div>
 
+                    <div className="docs-header">1.1.4 Method <code>set_token</code></div>
+                    <div className="docs-p">
+                        <DocsTable
+                            header={["Method", "Parameters", "Access", "Return", "Description"]}
+                            rows={[
+                                ["set_token", "const std::string& token_str, int64_t token_id", "bool", "Inserts a token-ID pair into the bidirectional maps."],
+                                ["set_special_token", "const std::string& token_str, TokenRole token_role", "bool", "Assigns a unique string to a specific TokenRole."]
+                            ]}
+                        />
+                    </div>
+
+
+
+
+
                     <div className="docs-header">1.1.4 Modification Methods</div>
                     <div className="docs-p">
                         <DocsTable
                             header={["Method", "Parameters", "Return", "Description"]}
                             rows={[
                                 ["set_token", "const std::string& token_str, int64_t token_id", "bool", "Inserts a token-ID pair into the bidirectional maps."],
-                                ["set_special_token", "const std::string& token_str, TokenRole token_role", "bool", "Assigns a specific string to a special token role."]
+                                ["set_special_token", "const std::string& token_str, TokenRole token_role", "bool", "Assigns a unique string to a specific TokenRole."]
                             ]}
                         />
                     </div>

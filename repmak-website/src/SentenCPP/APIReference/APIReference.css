@@ -28,7 +28,7 @@
 }
 
 .default-val {
-    background-color: #eff3f6;
+    background-color: var(--white);
     padding: 2px 4px;
     border-radius: 3px;
     font-family: monospace;
