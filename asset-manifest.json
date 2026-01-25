@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2b941bcc.css",
-    "main.js": "/static/js/main.632e1f49.js",
+    "main.css": "/static/css/main.3aa7202b.css",
+    "main.js": "/static/js/main.3f44731e.js",
     "static/js/453.3a2bc99d.chunk.js": "/static/js/453.3a2bc99d.chunk.js",
     "static/media/jolt.gif": "/static/media/jolt.6a436c32bfccb2ae4d94.gif",
     "static/media/auditorium booking system.gif": "/static/media/auditorium booking system.3d6e2e488ec47feb09d2.gif",
@@ -10,12 +10,12 @@
     "static/media/sentenCPPLogo.png": "/static/media/sentenCPPLogo.6b2a7f8721b9f837dea2.png",
     "static/media/logo.png": "/static/media/logo.71fdaf1b1800b4c4ffa8.png",
     "index.html": "/index.html",
-    "main.2b941bcc.css.map": "/static/css/main.2b941bcc.css.map",
-    "main.632e1f49.js.map": "/static/js/main.632e1f49.js.map",
+    "main.3aa7202b.css.map": "/static/css/main.3aa7202b.css.map",
+    "main.3f44731e.js.map": "/static/js/main.3f44731e.js.map",
     "453.3a2bc99d.chunk.js.map": "/static/js/453.3a2bc99d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2b941bcc.css",
-    "static/js/main.632e1f49.js"
+    "static/css/main.3aa7202b.css",
+    "static/js/main.3f44731e.js"
   ]
 }
