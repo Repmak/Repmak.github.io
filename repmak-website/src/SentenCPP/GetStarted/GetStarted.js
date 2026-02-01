@@ -1,19 +1,19 @@
 import React, {useEffect, useState} from 'react';
-import './Installation.css';
+import './GetStarted.css';
 import CodeSnippet from '../CodeSnippet/CodeSnippet';
 import {code} from './code';
 
-export default function Installation() {
+export default function GetStarted() {
     return (
         <>
             <div className="docs-outline">
                 This guide will help you integrate <b>sentenCPP</b> into your first project.
                 <ul className="numbered-list">
-                    <li><a href="#/sentencpp-docs/installation#prerequisites">Prerequisites</a></li>
-                    <li><a href="#/sentencpp-docs/installation#cmake-setup">CMake Setup</a></li>
-                    <li><a href="#/sentencpp-docs/installation#config-and-build">Configuring & Building</a></li>
-                    <li><a href="#/sentencpp-docs/installation#exporting-models-to-onnx">Exporting Models to ONNX</a></li>
-                    <li><a href="#/sentencpp-docs/installation#example-usage">Example Usage</a></li>
+                    <li><a href="#/sentencpp-docs/get-started#prerequisites">Prerequisites</a></li>
+                    <li><a href="#/sentencpp-docs/get-started#cmake-setup">CMake Setup</a></li>
+                    <li><a href="#/sentencpp-docs/get-started#config-and-build">Configuring & Building</a></li>
+                    <li><a href="#/sentencpp-docs/get-started#exporting-models-to-onnx">Exporting Models to ONNX</a></li>
+                    <li><a href="#/sentencpp-docs/get-started#example-usage">Example Usage</a></li>
                 </ul>
             </div>
 

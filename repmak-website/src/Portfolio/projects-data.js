@@ -23,7 +23,7 @@ export const projects = [
     },
     {
         title: "Promptable Traceback",
-        dates: "01/2026 - Present",
+        dates: "12/2025 - Present",
         image: null,
         description: "Built and maintaining an open-source Python library to streamline AI-assisted debugging by automating crash reporting.",
         repo: "https://github.com/Repmak/promptable-traceback",

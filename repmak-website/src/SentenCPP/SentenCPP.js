@@ -4,8 +4,7 @@ import './SentenCPP.css';
 import {useDocumentMetadata} from './useDocumentMetadata.js';
 import NavigationBar from "./NavigationBar/NavigationBar";
 import Overview from "./Overview/Overview";
-import QuickStart from "./QuickStart/QuickStart";
-import Installation from "./Installation/Installation";
+import GetStarted from "./GetStarted/GetStarted";
 import APIReference from "./APIReference/APIReference";
 import Icon from './assets/logo.png';
 
@@ -36,8 +35,7 @@ export default function SentenCPP() {
                 <Routes>
                     <Route path="/" element={<Navigate to="/sentencpp-docs/overview" replace />} />
                     <Route path="overview" element={<Overview />} />
-                    <Route path="quick-start" element={<QuickStart />} />
-                    <Route path="installation" element={<Installation />} />
+                    <Route path="get-started" element={<GetStarted />} />
                     <Route path="api-reference" element={<APIReference />} />
                 </Routes>
             </div>

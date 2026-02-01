@@ -14,12 +14,8 @@ export default function NavigationBar() {
                 Overview
             </NavLink>
 
-            <NavLink to="/sentencpp-docs/quick-start" className={navLinkClass}>
-                Quick Start
-            </NavLink>
-
-            <NavLink to="/sentencpp-docs/installation" className={navLinkClass}>
-                Installation Guide
+            <NavLink to="/sentencpp-docs/get-started" className={navLinkClass}>
+                Get Started
             </NavLink>
 
             <NavLink to="/sentencpp-docs/api-reference" className={navLinkClass}>

@@ -18,17 +18,19 @@ export default function APIReference() {
                 </ul>
             </div>
 
-            <div id="tokenizer">
-                <Tokenizer />
-            </div>
+            todo
 
-            <div id="inference">
-                <Inference />
-            </div>
+            {/*<div id="tokenizer">*/}
+            {/*    <Tokenizer />*/}
+            {/*</div>*/}
 
-            <div id="embedding-utils">
-                <EmbeddingUtils />
-            </div>
+            {/*<div id="inference">*/}
+            {/*    <Inference />*/}
+            {/*</div>*/}
+
+            {/*<div id="embedding-utils">*/}
+            {/*    <EmbeddingUtils />*/}
+            {/*</div>*/}
         </>
     );
 }
